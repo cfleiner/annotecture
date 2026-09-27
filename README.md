@@ -39,8 +39,8 @@ We provide explicit installation guidance for Windows users because in our exper
 
 1. Clone the GitHub repository using a tool like PowerShell:
 ```shell
-git clone [nameOfThisRepository]
-cd [nameOfThisRepository]
+git clone https://github.com/cfleiner/annotecture
+cd annotecture
 ```
 
 2. Create a virtual environment in the project folder and install required packages:
