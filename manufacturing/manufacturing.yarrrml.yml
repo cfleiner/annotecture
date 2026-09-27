@@ -1,0 +1,149 @@
+prefixes:
+  ex:     http://www.example.com/
+  foaf:   http://xmlns.com/foaf/0.1/
+  oa:     http://www.w3.org/ns/oa#
+  prov:   http://www.w3.org/ns/prov#
+  rdf:    http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs:   http://www.w3.org/2000/01/rdf-schema#
+  rr:     http://www.w3.org/ns/r2rml#
+  schema: http://schema.org/
+  xsd:    http://www.w3.org/2001/XMLSchema#
+
+
+sources:
+  events_source:
+    access: csv/events.csv
+    referenceFormulation: csv
+  claims_source:
+    access: csv/claims.csv
+    referenceFormulation: csv
+  experts_source:
+    access: csv/experts.csv
+    referenceFormulation: csv
+  resources_source:
+    access: csv/resources.csv
+    referenceFormulation: csv
+  kengineers_source:
+    access: csv/kEngineers.csv
+    referenceFormulation: csv
+  formalRepresentation_source:
+    access: csv/formalRepresentations.csv
+    referenceFormulation: csv
+  assessments_source:
+    access: csv/assessments.csv
+    referenceFormulation: csv
+
+
+mappings:
+# BEGIN: CLAIM GENERATION NETWORK
+  event:
+    sources:
+      - events_source
+    s: ex:$(eventID)
+    po:
+      - [a, [ex:Event, prov:Activity]]
+      - [rdfs:label, $(name)]
+      - p: prov:wasAssociatedWith
+        o:
+          mapping: expert
+          condition:
+            function: equal
+            parameters:
+            - [str1, $(attendedBy)]
+            - [str2, $(expertID)]
+      - p: prov:generated
+        o:
+          mapping: resource
+          condition:
+            function: equal
+            parameters:
+            - [str1, $(outcome)]
+            - [str2, $(resourceID)]
+
+  expert:
+    sources:
+      - experts_source
+    s: ex:$(expertID)
+    po:
+      - [a, [ex:DomainExpert, foaf:Agent, prov:Agent]]
+      - [foaf:name, $(firstName) $(lastName)]
+
+  resource:
+    sources:
+      - resources_source
+    s: ex:$(resourceID)
+    po:
+      - [a, [ex:Resource, prov:Entity]]
+      - [rdfs:label, $(title)]
+      - [prov:wasAttributedTo, ex:$(contributor)~iri]
+
+  claim:
+    sources:
+      - claims_source
+    s: ex:$(claimID)
+    po:
+      - [a, [ex:Claim, oa:Annotation, prov:Entity]]
+      - [ex:startedAt, $(timestamp), xsd:dateTime]
+      - [oa:bodyValue, $(content)]
+      - [rdfs:comment, $(explanation)]
+      - [oa:hasTarget, ex:$(target)~iri]
+      - [ex:case, ex:$(case)~iri]
+      - p: prov:wasAttributedTo
+        o:
+          mapping: expert
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(owner)]
+              - [str2, $(expertID)]
+ 
+# END: CLAIM GENERATION NETWORK
+
+# BEGIN: CLAIM FORMALIZATION NETWORK
+  kengineer:
+      sources:
+        - kengineers_source
+      s: ex:$(kEngineerID)
+      po:
+        - [a, [ex:KnowledgeEngineer, foaf:Agent, prov:Agent]]
+        - [foaf:name, $(firstName) $(lastName)]
+
+  formal_representation:
+      sources:
+        - formalRepresentation_source
+      s: ex:$(formalID)
+      po:
+        - [a, [ex:FormalRepresentation, oa:Annotation, prov:Entity]]
+        - [oa:bodyValue, $(content)]
+        - [rdfs:comment, $(explanation)]
+        - [ex:hasFormat, $(format)]
+        - [oa:hasTarget, ex:$(target)~iri]
+        - p: prov:wasAttributedTo
+          o:
+            mapping: kengineer
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(owner)]
+                - [str2, $(kEngineerID)]
+         
+  assessment:
+      sources:
+        - assessments_source
+      s: ex:$(assessmentID)
+      po:
+        - [a, [ex:Assessment, oa:Annotation, prov:Entity]]
+        - [oa:bodyValue, $(content)]
+        - [oa:motivatedBy, oa:assessing~iri]
+        - [ex:logical_pass, $(logical_pass), xsd:decimal]
+        - [oa:hasTarget, ex:$(target)~iri]
+        - p: prov:wasAttributedTo
+          o:
+            mapping: kengineer
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(owner)]
+                - [str2, $(kEngineerID)]
+       
+# END: CLAIM FORMALIZATION NETWORK

@@ -1,0 +1,8 @@
+PREFIX ex: <http://www.example.com/>
+
+SELECT ?s
+WHERE {
+    ?s a ex:Claim .
+
+}
+

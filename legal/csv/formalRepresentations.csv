@@ -1,0 +1,817 @@
+formalID,owner,content,explanation,format,target,selectorPhrase,pythen_concept,representation_score
+formal_0,representationVerifier,necessary_for_contract_performance,,pythen,scenario_2,,fact,100
+formal_1,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_2,,fact,100
+formal_2,representationVerifier,"{'p': 'processing_is_lawful', 'op': 'ANY', 'conditions': ['art6_a_consent', 'art6_b_contract', 'art6_c_legal_obligation', 'art6_d_vital_interests', 'art6_e_public_task', 'art6_f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_2,,rule,100
+formal_3,representationVerifier,"{'p': 'art6_a_consent', 'op': 'ALL', 'conditions': ['data_subject_has_given_consent'], 'exceptions': []}",,pythen,scenario_2,,rule,100
+formal_4,representationVerifier,"{'p': 'art6_b_contract', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_2,,rule,100
+formal_5,representationVerifier,"{'p': 'art6_c_legal_obligation', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_2,,rule,100
+formal_6,representationVerifier,"{'p': 'art6_d_vital_interests', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_2,,rule,100
+formal_7,representationVerifier,"{'p': 'art6_e_public_task', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_2,,rule,100
+formal_8,representationVerifier,"{'p': 'art6_f_legitimate_interests', 'op': 'ALL', 'conditions': ['legitimate_interests_not_overridden'], 'exceptions': []}",,pythen,scenario_2,,rule,100
+formal_9,representationVerifier,False,,pythen,scenario_2,,result,100
+formal_10,representationVerifier,processing_needed_for_legitimate_interests,,pythen,scenario_6,,fact,100
+formal_11,representationVerifier,processing_necessary_for_contract,,pythen,scenario_6,,fact,100
+formal_12,representationVerifier,processing_needed_for_legal_obligation,,pythen,scenario_6,,fact,100
+formal_13,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['consent_basis', 'contract_necessity_basis', 'legal_obligation_basis', 'vital_interests_basis', 'public_task_basis', 'legitimate_interests_basis'], 'exceptions': []}",,pythen,scenario_6,,rule,100
+formal_14,representationVerifier,"{'p': 'consent_basis', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_6,,rule,100
+formal_15,representationVerifier,"{'p': 'contract_necessity_basis', 'op': 'ALL', 'conditions': ['processing_necessary_for_contract'], 'exceptions': []}",,pythen,scenario_6,,rule,100
+formal_16,representationVerifier,"{'p': 'legal_obligation_basis', 'op': 'ALL', 'conditions': ['processing_needed_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_6,,rule,100
+formal_17,representationVerifier,"{'p': 'vital_interests_basis', 'op': 'ALL', 'conditions': ['processing_needed_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_6,,rule,100
+formal_18,representationVerifier,"{'p': 'public_task_basis', 'op': 'ALL', 'conditions': ['processing_needed_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_6,,rule,100
+formal_19,representationVerifier,"{'p': 'legitimate_interests_basis', 'op': 'ALL', 'conditions': ['processing_needed_for_legitimate_interests'], 'exceptions': ['data_subject_rights_override_interests']}",,pythen,scenario_6,,rule,100
+formal_20,representationVerifier,False,,pythen,scenario_6,,result,100
+formal_21,representationVerifier,necessary_for_legitimate_interests,,pythen,scenario_10,,fact,100
+formal_22,representationVerifier,necessary_for_contract_performance,,pythen,scenario_10,,fact,100
+formal_23,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_10,,fact,100
+formal_24,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_10,,rule,100
+formal_25,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_10,,rule,100
+formal_26,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_10,,rule,100
+formal_27,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_10,,rule,100
+formal_28,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_10,,rule,100
+formal_29,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_10,,rule,100
+formal_30,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['necessary_for_legitimate_interests'], 'exceptions': ['overridden_by_data_subject_rights']}",,pythen,scenario_10,,rule,100
+formal_31,representationVerifier,False,,pythen,scenario_10,,result,100
+formal_32,representationVerifier,necessary_for_contract_performance,,pythen,scenario_30,,fact,100
+formal_33,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_30,,fact,100
+formal_34,representationVerifier,"{'p': 'processing_lawful_art6', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_30,,rule,100
+formal_35,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_30,,rule,100
+formal_36,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_30,,rule,100
+formal_37,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_30,,rule,100
+formal_38,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_30,,rule,100
+formal_39,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_30,,rule,100
+formal_40,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['necessary_for_legitimate_interests'], 'exceptions': ['overridden_by_data_subject_rights']}",,pythen,scenario_30,,rule,100
+formal_41,representationVerifier,False,,pythen,scenario_30,,result,100
+formal_42,representationVerifier,processing_necessary_for_legal_duty,,pythen,scenario_32,,fact,100
+formal_43,representationVerifier,processing_necessary_for_contract,,pythen,scenario_32,,fact,100
+formal_44,representationVerifier,controller_has_legitimate_interest,,pythen,scenario_32,,fact,100
+formal_45,representationVerifier,processing_necessary_for_legit_interest,,pythen,scenario_32,,fact,100
+formal_46,representationVerifier,data_subject_consent_given,,pythen,scenario_32,,fact,100
+formal_47,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_32,,rule,100
+formal_48,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_32,,rule,100
+formal_49,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['processing_necessary_for_contract'], 'exceptions': []}",,pythen,scenario_32,,rule,100
+formal_50,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['processing_necessary_for_legal_duty'], 'exceptions': []}",,pythen,scenario_32,,rule,100
+formal_51,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['processing_necessary_to_protect_life'], 'exceptions': []}",,pythen,scenario_32,,rule,100
+formal_52,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['processing_necessary_for_public_task'], 'exceptions': []}",,pythen,scenario_32,,rule,100
+formal_53,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['controller_has_legitimate_interest', 'processing_necessary_for_legit_interest'], 'exceptions': ['data_subject_rights_override_interest']}",,pythen,scenario_32,,rule,100
+formal_54,representationVerifier,False,,pythen,scenario_32,,result,100
+formal_55,representationVerifier,processing_needed_for_legal_obligation,,pythen,scenario_39,,fact,100
+formal_56,representationVerifier,processing_needed_for_contract,,pythen,scenario_39,,fact,100
+formal_57,representationVerifier,processing_needed_for_legitimate_interest,,pythen,scenario_39,,fact,100
+formal_58,representationVerifier,"{'p': 'gdpr6_lawful_processing', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_39,,rule,100
+formal_59,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_39,,rule,100
+formal_60,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['processing_needed_for_contract'], 'exceptions': []}",,pythen,scenario_39,,rule,100
+formal_61,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['processing_needed_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_39,,rule,100
+formal_62,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['processing_needed_to_protect_vital'], 'exceptions': []}",,pythen,scenario_39,,rule,100
+formal_63,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['processing_needed_for_public_task'], 'exceptions': []}",,pythen,scenario_39,,rule,100
+formal_64,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['processing_needed_for_legitimate_interest'], 'exceptions': ['data_subject_rights_override_interest']}",,pythen,scenario_39,,rule,100
+formal_65,representationVerifier,False,,pythen,scenario_39,,result,100
+formal_66,representationVerifier,data_biometric_id,,pythen,scenario_54,,fact,100
+formal_67,representationVerifier,data_health,,pythen,scenario_54,,fact,100
+formal_68,representationVerifier,health_or_occ_purpose,,pythen,scenario_54,,fact,100
+formal_69,representationVerifier,"{'p': 'art9_allowed_processing', 'op': 'ALL', 'conditions': ['is_special_category_data', 'has_art9_exception'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_70,representationVerifier,"{'p': 'is_special_category_data', 'op': 'ANY', 'conditions': ['data_race_or_ethnicity', 'data_political_opinions', 'data_religious_or_beliefs', 'data_union_membership', 'data_genetic', 'data_biometric_id', 'data_health', 'data_sex_life_or_orientation'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_71,representationVerifier,"{'p': 'has_art9_exception', 'op': 'ANY', 'conditions': ['explicit_consent', 'employment_or_social_security_law', 'vital_interests', 'nonprofit_legitimate_activities', 'manifestly_made_public', 'legal_claims_or_courts', 'substantial_public_interest_law', 'occ_or_preventive_medicine', 'public_health_law', 'archiving_research_statistics'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_72,representationVerifier,"{'p': 'explicit_consent', 'op': 'ALL', 'conditions': ['consent_explicit'], 'exceptions': ['consent_withdrawn']}",,pythen,scenario_54,,rule,100
+formal_73,representationVerifier,"{'p': 'employment_or_social_security_law', 'op': 'ALL', 'conditions': ['required_by_employment_ss_law'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_74,representationVerifier,"{'p': 'vital_interests', 'op': 'ALL', 'conditions': ['protect_vital_interests', 'subject_cannot_consent'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_75,representationVerifier,"{'p': 'nonprofit_legitimate_activities', 'op': 'ALL', 'conditions': ['nonprofit_body', 'legitimate_activities', 'members_or_contacts_only'], 'exceptions': ['data_disclosed_outside_nonprofit']}",,pythen,scenario_54,,rule,100
+formal_76,representationVerifier,"{'p': 'manifestly_made_public', 'op': 'ALL', 'conditions': ['made_public_by_data_subject'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_77,representationVerifier,"{'p': 'legal_claims_or_courts', 'op': 'ANY', 'conditions': ['establish_legal_claims', 'exercise_legal_claims', 'defend_legal_claims', 'courts_acting_judicially'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_78,representationVerifier,"{'p': 'substantial_public_interest_law', 'op': 'ALL', 'conditions': ['substantial_public_interest', 'authorized_by_law', 'has_safeguards'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_79,representationVerifier,"{'p': 'occ_or_preventive_medicine', 'op': 'ALL', 'conditions': ['health_or_occ_purpose', 'under_professional_secrecy'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_80,representationVerifier,"{'p': 'public_health_law', 'op': 'ALL', 'conditions': ['public_health_purpose', 'authorized_by_law', 'has_safeguards'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_81,representationVerifier,"{'p': 'archiving_research_statistics', 'op': 'ALL', 'conditions': ['archiving_research_or_stats', 'public_interest_basis', 'has_safeguards'], 'exceptions': []}",,pythen,scenario_54,,rule,100
+formal_82,representationVerifier,False,,pythen,scenario_54,,result,100
+formal_83,representationVerifier,medical_diagnosis_or_care_purpose,,pythen,scenario_57,,fact,100
+formal_84,representationVerifier,by_health_professional_or_secrecy_bound,,pythen,scenario_57,,fact,100
+formal_85,representationVerifier,employment_or_social_security_purpose,,pythen,scenario_57,,fact,100
+formal_86,representationVerifier,"{'p': 'art9_allowed_processing', 'op': 'ANY', 'conditions': ['not_special_category_data', 'special_category_with_exception'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_87,representationVerifier,"{'p': 'not_special_category_data', 'op': 'ALL', 'conditions': ['data_not_in_art9_categories'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_88,representationVerifier,"{'p': 'special_category_with_exception', 'op': 'ANY', 'conditions': ['explicit_consent_exception', 'employment_social_security_exception', 'vital_interests_exception', 'nonprofit_body_exception', 'manifestly_public_exception', 'legal_claims_exception', 'substantial_public_interest_exception', 'medical_diagnosis_care_exception', 'public_health_exception', 'archiving_research_statistics_exception'], 'exceptions': ['no_art9_exception_applies']}",,pythen,scenario_57,,rule,100
+formal_89,representationVerifier,"{'p': 'explicit_consent_exception', 'op': 'ALL', 'conditions': ['explicit_consent_obtained'], 'exceptions': ['member_state_law_bans_consent_derogation']}",,pythen,scenario_57,,rule,100
+formal_90,representationVerifier,"{'p': 'employment_social_security_exception', 'op': 'ALL', 'conditions': ['employment_or_social_security_purpose', 'authorized_by_union_or_ms_law', 'safeguards_in_place'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_91,representationVerifier,"{'p': 'vital_interests_exception', 'op': 'ALL', 'conditions': ['protect_vital_interests', 'data_subject_incapable_of_consent'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_92,representationVerifier,"{'p': 'nonprofit_body_exception', 'op': 'ALL', 'conditions': ['not_for_profit_body', 'legitimate_activities_purpose', 'relates_to_members_or_contacts', 'no_disclosure_without_consent'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_93,representationVerifier,"{'p': 'manifestly_public_exception', 'op': 'ALL', 'conditions': ['data_manifestly_made_public_by_subject'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_94,representationVerifier,"{'p': 'legal_claims_exception', 'op': 'ANY', 'conditions': ['establish_exercise_defend_legal_claims', 'courts_acting_in_judicial_capacity'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_95,representationVerifier,"{'p': 'substantial_public_interest_exception', 'op': 'ALL', 'conditions': ['substantial_public_interest_purpose', 'authorized_by_union_or_ms_law', 'proportionate_to_aim', 'essence_of_data_protection_respected', 'specific_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_96,representationVerifier,"{'p': 'medical_diagnosis_care_exception', 'op': 'ALL', 'conditions': ['medical_diagnosis_or_care_purpose', 'by_health_professional_or_secrecy_bound', 'authorized_by_union_or_ms_law_or_contract'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_97,representationVerifier,"{'p': 'public_health_exception', 'op': 'ALL', 'conditions': ['public_health_purpose', 'authorized_by_union_or_ms_law', 'suitable_measures_and_safeguards'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_98,representationVerifier,"{'p': 'archiving_research_statistics_exception', 'op': 'ALL', 'conditions': ['archiving_research_statistics_purpose', 'article89_safeguards_applied', 'authorized_by_union_or_ms_law', 'proportionate_to_aim', 'essence_of_data_protection_respected'], 'exceptions': []}",,pythen,scenario_57,,rule,100
+formal_99,representationVerifier,False,,pythen,scenario_57,,result,100
+formal_100,representationVerifier,data_health,,pythen,scenario_58,,fact,100
+formal_101,representationVerifier,for_occ_or_prev_medicine_or_healthcare,,pythen,scenario_58,,fact,100
+formal_102,representationVerifier,"{'p': 'art9_processing_allowed', 'op': 'ALL', 'conditions': ['is_special_category_data', 'has_art9_exception'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_103,representationVerifier,"{'p': 'is_special_category_data', 'op': 'ANY', 'conditions': ['data_race_or_ethnicity', 'data_political_opinions', 'data_religious_or_philosophical', 'data_union_membership', 'data_genetic', 'data_biometric_unique_id', 'data_health', 'data_sex_life_or_orientation'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_104,representationVerifier,"{'p': 'has_art9_exception', 'op': 'ANY', 'conditions': ['explicit_consent', 'employment_social_security_law', 'vital_interests_incapable_consent', 'nonprofit_members_related_purpose', 'manifestly_made_public_by_subject', 'legal_claims_or_courts', 'substantial_public_interest_law', 'occupational_preventive_medicine', 'public_health_law', 'archiving_research_statistics'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_105,representationVerifier,"{'p': 'explicit_consent', 'op': 'ALL', 'conditions': ['consent_explicit_given'], 'exceptions': ['consent_withdrawn']}",,pythen,scenario_58,,rule,100
+formal_106,representationVerifier,"{'p': 'employment_social_security_law', 'op': 'ALL', 'conditions': ['required_by_employment_or_ss_law'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_107,representationVerifier,"{'p': 'vital_interests_incapable_consent', 'op': 'ALL', 'conditions': ['protect_vital_interests', 'subject_cannot_consent'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_108,representationVerifier,"{'p': 'nonprofit_members_related_purpose', 'op': 'ALL', 'conditions': ['controller_is_not_for_profit_body', 'aims_political_religious_union', 'processing_members_or_contacts_only', 'no_disclosure_without_consent'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_109,representationVerifier,"{'p': 'manifestly_made_public_by_subject', 'op': 'ALL', 'conditions': ['data_made_public_by_data_subject'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_110,representationVerifier,"{'p': 'legal_claims_or_courts', 'op': 'ANY', 'conditions': ['necessary_for_legal_claims', 'necessary_for_courts_acting_judicially'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_111,representationVerifier,"{'p': 'substantial_public_interest_law', 'op': 'ALL', 'conditions': ['necessary_substantial_public_interest', 'authorized_by_union_or_ms_law'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_112,representationVerifier,"{'p': 'occupational_preventive_medicine', 'op': 'ALL', 'conditions': ['for_occ_or_prev_medicine_or_healthcare', 'under_professional_secrecy'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_113,representationVerifier,"{'p': 'public_health_law', 'op': 'ALL', 'conditions': ['necessary_for_public_health', 'authorized_by_union_or_ms_law'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_114,representationVerifier,"{'p': 'archiving_research_statistics', 'op': 'ALL', 'conditions': ['necessary_for_archiving_research_stats', 'subject_to_appropriate_safeguards'], 'exceptions': []}",,pythen,scenario_58,,rule,100
+formal_115,representationVerifier,False,,pythen,scenario_58,,result,100
+formal_116,representationVerifier,data_is_health_data,,pythen,scenario_59,,fact,100
+formal_117,representationVerifier,medical_or_work_capacity_purpose,,pythen,scenario_59,,fact,100
+formal_118,representationVerifier,data_is_biometric_id,,pythen,scenario_59,,fact,100
+formal_119,representationVerifier,"{'p': 'gdpr_art9_special_data_processing', 'op': 'ALL', 'conditions': ['is_special_category_data', 'has_art9_exception'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_120,representationVerifier,"{'p': 'is_special_category_data', 'op': 'ANY', 'conditions': ['data_is_race_or_ethnicity', 'data_is_political_opinions', 'data_is_religious_beliefs', 'data_is_union_membership', 'data_is_genetic_data', 'data_is_biometric_id', 'data_is_health_data', 'data_is_sex_life_or_orientation'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_121,representationVerifier,"{'p': 'has_art9_exception', 'op': 'ANY', 'conditions': ['explicit_consent_obtained', 'employment_or_social_security_law', 'protect_vital_interests', 'nonprofit_members_data_legitimate', 'data_manifestly_public_by_subject', 'legal_claims_or_court_actions', 'substantial_public_interest_law', 'occupational_or_preventive_medicine', 'public_health_interest_law', 'archiving_research_statistics_safeguards'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_122,representationVerifier,"{'p': 'explicit_consent_obtained', 'op': 'ALL', 'conditions': ['consent_is_explicit'], 'exceptions': ['consent_withdrawn']}",,pythen,scenario_59,,rule,100
+formal_123,representationVerifier,"{'p': 'employment_or_social_security_law', 'op': 'ALL', 'conditions': ['needed_for_employment_obligation'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_124,representationVerifier,"{'p': 'protect_vital_interests', 'op': 'ALL', 'conditions': ['protect_vital_interests_needed'], 'exceptions': ['data_subject_can_consent']}",,pythen,scenario_59,,rule,100
+formal_125,representationVerifier,"{'p': 'nonprofit_members_data_legitimate', 'op': 'ALL', 'conditions': ['controller_is_nonprofit_body', 'processing_in_legit_activities', 'relates_to_members_or_contacts', 'data_not_disclosed_outside'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_126,representationVerifier,"{'p': 'data_manifestly_public_by_subject', 'op': 'ALL', 'conditions': ['made_public_by_data_subject'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_127,representationVerifier,"{'p': 'legal_claims_or_court_actions', 'op': 'ANY', 'conditions': ['establish_or_defend_legal_claims', 'courts_acting_in_judicial_capacity'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_128,representationVerifier,"{'p': 'substantial_public_interest_law', 'op': 'ALL', 'conditions': ['required_by_union_or_member_state_law', 'substantial_public_interest_needed'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_129,representationVerifier,"{'p': 'occupational_or_preventive_medicine', 'op': 'ALL', 'conditions': ['medical_or_work_capacity_purpose', 'under_health_professional_secrecy'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_130,representationVerifier,"{'p': 'public_health_interest_law', 'op': 'ALL', 'conditions': ['public_health_purpose', 'required_by_union_or_member_state_law'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_131,representationVerifier,"{'p': 'archiving_research_statistics_safeguards', 'op': 'ALL', 'conditions': ['archiving_research_statistics_purpose', 'appropriate_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_59,,rule,100
+formal_132,representationVerifier,False,,pythen,scenario_59,,result,100
+formal_133,representationVerifier,special_category_data_present,,pythen,scenario_60,,fact,100
+formal_134,representationVerifier,health_professional_confidentiality,,pythen,scenario_60,,fact,100
+formal_135,representationVerifier,"{'p': 'art9_processing_allowed', 'op': 'ANY', 'conditions': ['not_special_category_data', 'art9_exception_applies'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_136,representationVerifier,"{'p': 'not_special_category_data', 'op': 'ALL', 'conditions': ['special_category_data_present'], 'exceptions': ['special_category_data_present']}",,pythen,scenario_60,,rule,100
+formal_137,representationVerifier,"{'p': 'art9_exception_applies', 'op': 'ANY', 'conditions': ['explicit_consent', 'employment_social_security_obligation', 'vital_interests', 'nonprofit_members_activities', 'data_manifestly_made_public', 'legal_claims_or_courts', 'substantial_public_interest', 'occ_prev_medicine_or_healthcare', 'public_health_interest', 'archiving_research_statistics'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_138,representationVerifier,"{'p': 'explicit_consent', 'op': 'ALL', 'conditions': ['special_category_data_present', 'explicit_consent_obtained'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_139,representationVerifier,"{'p': 'employment_social_security_obligation', 'op': 'ALL', 'conditions': ['special_category_data_present', 'employment_or_social_security_law'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_140,representationVerifier,"{'p': 'vital_interests', 'op': 'ALL', 'conditions': ['special_category_data_present', 'protect_vital_interests', 'data_subject_incapable_consent'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_141,representationVerifier,"{'p': 'nonprofit_members_activities', 'op': 'ALL', 'conditions': ['special_category_data_present', 'nonprofit_aims_political_religious_union', 'processing_for_members_or_contacts', 'no_disclosure_outside_without_consent'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_142,representationVerifier,"{'p': 'data_manifestly_made_public', 'op': 'ALL', 'conditions': ['special_category_data_present', 'data_made_public_by_data_subject'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_143,representationVerifier,"{'p': 'legal_claims_or_courts', 'op': 'ANY', 'conditions': ['legal_claims_establish_exercise_defend', 'courts_acting_judicial_capacity'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_144,representationVerifier,"{'p': 'substantial_public_interest', 'op': 'ALL', 'conditions': ['special_category_data_present', 'processing_for_substantial_public_interest', 'authorized_by_union_or_member_state_law'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_145,representationVerifier,"{'p': 'occ_prev_medicine_or_healthcare', 'op': 'ALL', 'conditions': ['special_category_data_present', 'occ_or_prev_medicine_or_healthcare', 'health_professional_confidentiality'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_146,representationVerifier,"{'p': 'public_health_interest', 'op': 'ALL', 'conditions': ['special_category_data_present', 'processing_for_public_health', 'authorized_by_union_or_member_state_law'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_147,representationVerifier,"{'p': 'archiving_research_statistics', 'op': 'ALL', 'conditions': ['special_category_data_present', 'archiving_research_or_statistics_purpose', 'appropriate_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_60,,rule,100
+formal_148,representationVerifier,False,,pythen,scenario_60,,result,100
+formal_149,representationVerifier,under_professional_secrecy_or_law,,pythen,scenario_63,,fact,100
+formal_150,representationVerifier,health_or_social_care_purpose,,pythen,scenario_63,,fact,100
+formal_151,representationVerifier,explicit_consent_obtained,,pythen,scenario_63,,fact,100
+formal_152,representationVerifier,"{'p': 'gdpr_art9_rule', 'op': 'ANY', 'conditions': ['not_special_category_data', 'art9_exception_applies'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_153,representationVerifier,"{'p': 'not_special_category_data', 'op': 'ALL', 'conditions': ['not_processing_special_category_data'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_154,representationVerifier,"{'p': 'art9_exception_applies', 'op': 'ANY', 'conditions': ['explicit_consent', 'employment_social_security_law', 'vital_interests_incapable_consent', 'nonprofit_legitimate_activities', 'data_manifestly_public_by_subject', 'legal_claims_or_court_actions', 'substantial_public_interest_law', 'occupational_preventive_medicine', 'public_health_law', 'archiving_research_statistics'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_155,representationVerifier,"{'p': 'explicit_consent', 'op': 'ALL', 'conditions': ['explicit_consent_obtained'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_156,representationVerifier,"{'p': 'employment_social_security_law', 'op': 'ALL', 'conditions': ['required_for_employment_ss_law'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_157,representationVerifier,"{'p': 'vital_interests_incapable_consent', 'op': 'ALL', 'conditions': ['protect_vital_interests', 'subject_cannot_consent'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_158,representationVerifier,"{'p': 'nonprofit_legitimate_activities', 'op': 'ALL', 'conditions': ['nonprofit_with_political_religious_aims', 'processing_in_legitimate_activities', 'relates_to_members_or_contacts_only', 'no_disclosure_without_consent'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_159,representationVerifier,"{'p': 'data_manifestly_public_by_subject', 'op': 'ALL', 'conditions': ['data_made_public_by_subject'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_160,representationVerifier,"{'p': 'legal_claims_or_court_actions', 'op': 'ALL', 'conditions': ['necessary_for_legal_claims'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_161,representationVerifier,"{'p': 'substantial_public_interest_law', 'op': 'ALL', 'conditions': ['substantial_public_interest', 'authorized_by_law'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_162,representationVerifier,"{'p': 'occupational_preventive_medicine', 'op': 'ALL', 'conditions': ['health_or_social_care_purpose', 'under_professional_secrecy_or_law'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_163,representationVerifier,"{'p': 'public_health_law', 'op': 'ALL', 'conditions': ['public_health_purpose', 'authorized_by_law'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_164,representationVerifier,"{'p': 'archiving_research_statistics', 'op': 'ALL', 'conditions': ['archiving_research_statistics_purpose', 'authorized_by_law'], 'exceptions': []}",,pythen,scenario_63,,rule,100
+formal_165,representationVerifier,False,,pythen,scenario_63,,result,100
+formal_166,representationVerifier,necessary_for_health_or_occupational_purpose,,pythen,scenario_69,,fact,100
+formal_167,representationVerifier,"{'p': 'gdpr_art9_processing_allowed', 'op': 'ANY', 'conditions': ['not_special_category_data', 'art9_exception_applies'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_168,representationVerifier,"{'p': 'not_special_category_data', 'op': 'ALL', 'conditions': ['data_not_in_art9_special_categories'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_169,representationVerifier,"{'p': 'art9_exception_applies', 'op': 'ANY', 'conditions': ['explicit_consent', 'employment_social_security_law', 'vital_interests', 'nonprofit_legitimate_activities', 'manifestly_public_by_data_subject', 'legal_claims_or_courts', 'substantial_public_interest_law', 'health_or_occupational_medicine', 'public_health_law', 'archiving_research_statistics'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_170,representationVerifier,"{'p': 'explicit_consent', 'op': 'ALL', 'conditions': ['explicit_consent_obtained'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_171,representationVerifier,"{'p': 'employment_social_security_law', 'op': 'ALL', 'conditions': ['required_for_employment_ss_law'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_172,representationVerifier,"{'p': 'vital_interests', 'op': 'ALL', 'conditions': ['protect_vital_interests', 'data_subject_incapable_of_consent'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_173,representationVerifier,"{'p': 'nonprofit_legitimate_activities', 'op': 'ALL', 'conditions': ['nonprofit_political_religious_union_aim', 'processing_in_legitimate_activities', 'relates_to_members_or_regular_contacts', 'data_not_disclosed_outside_without_consent'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_174,representationVerifier,"{'p': 'manifestly_public_by_data_subject', 'op': 'ALL', 'conditions': ['data_made_public_by_data_subject'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_175,representationVerifier,"{'p': 'legal_claims_or_courts', 'op': 'ANY', 'conditions': ['necessary_for_legal_claims', 'necessary_for_courts_acting_judicially'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_176,representationVerifier,"{'p': 'substantial_public_interest_law', 'op': 'ALL', 'conditions': ['necessary_for_substantial_public_interest', 'authorized_by_union_or_member_state_law'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_177,representationVerifier,"{'p': 'health_or_occupational_medicine', 'op': 'ALL', 'conditions': ['necessary_for_health_or_occupational_purpose', 'under_health_professional_secrecy'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_178,representationVerifier,"{'p': 'public_health_law', 'op': 'ALL', 'conditions': ['necessary_for_public_health', 'authorized_by_union_or_member_state_law'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_179,representationVerifier,"{'p': 'archiving_research_statistics', 'op': 'ALL', 'conditions': ['necessary_for_archiving_research_stats', 'subject_to_art89_safeguards'], 'exceptions': []}",,pythen,scenario_69,,rule,100
+formal_180,representationVerifier,False,,pythen,scenario_69,,result,100
+formal_181,representationVerifier,not_political_opinions,,pythen,scenario_70,,fact,100
+formal_182,representationVerifier,not_religious_or_philosophical,,pythen,scenario_70,,fact,100
+formal_183,representationVerifier,not_genetic_data,,pythen,scenario_70,,fact,100
+formal_184,representationVerifier,not_union_membership,,pythen,scenario_70,,fact,100
+formal_185,representationVerifier,not_sex_life_or_orientation,,pythen,scenario_70,,fact,100
+formal_186,representationVerifier,not_race_or_ethnicity,,pythen,scenario_70,,fact,100
+formal_187,representationVerifier,necessary_for_employment_or_ss,,pythen,scenario_70,,fact,100
+formal_188,representationVerifier,"{'p': 'gdpr_a9_processing_allowed', 'op': 'ANY', 'conditions': ['not_special_category_data', 'a9_special_data_exception_applies'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_189,representationVerifier,"{'p': 'not_special_category_data', 'op': 'ALL', 'conditions': ['not_race_or_ethnicity', 'not_political_opinions', 'not_religious_or_philosophical', 'not_union_membership', 'not_genetic_data', 'not_biometric_unique_id', 'not_health_data', 'not_sex_life_or_orientation'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_190,representationVerifier,"{'p': 'a9_special_data_exception_applies', 'op': 'ANY', 'conditions': ['explicit_consent', 'employment_social_security_law', 'vital_interests_incapable_consent', 'non_profit_legit_activities_members', 'manifestly_made_public_by_subject', 'legal_claims_or_courts', 'substantial_public_interest_law', 'occupational_preventive_medicine', 'public_health_law', 'archiving_research_statistics_safeguards'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_191,representationVerifier,"{'p': 'explicit_consent', 'op': 'ALL', 'conditions': ['data_subject_explicit_consent', 'consent_is_for_specific_purpose'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_192,representationVerifier,"{'p': 'employment_social_security_law', 'op': 'ALL', 'conditions': ['necessary_for_employment_or_ss', 'authorised_by_union_or_member_state_law', 'appropriate_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_193,representationVerifier,"{'p': 'vital_interests_incapable_consent', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests', 'data_subject_cannot_consent'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_194,representationVerifier,"{'p': 'non_profit_legit_activities_members', 'op': 'ALL', 'conditions': ['controller_is_nonprofit_body', 'processing_in_legitimate_activities', 'relates_to_members_or_contacts_only', 'no_disclosure_without_consent'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_195,representationVerifier,"{'p': 'manifestly_made_public_by_subject', 'op': 'ALL', 'conditions': ['data_manifestly_public_by_subject', 'processing_relates_to_public_data'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_196,representationVerifier,"{'p': 'legal_claims_or_courts', 'op': 'ANY', 'conditions': ['necessary_for_legal_claims', 'necessary_for_courts_acting_judicially'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_197,representationVerifier,"{'p': 'substantial_public_interest_law', 'op': 'ALL', 'conditions': ['necessary_for_substantial_public_interest', 'based_on_union_or_member_state_law', 'proportionate_and_respects_essence', 'specific_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_198,representationVerifier,"{'p': 'occupational_preventive_medicine', 'op': 'ALL', 'conditions': ['necessary_for_health_or_social_care', 'based_on_law_or_contract_with_professional', 'subject_to_professional_secrecy'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_199,representationVerifier,"{'p': 'public_health_law', 'op': 'ALL', 'conditions': ['necessary_for_public_health', 'based_on_union_or_member_state_law', 'safeguards_for_rights_and_freedoms'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_200,representationVerifier,"{'p': 'archiving_research_statistics_safeguards', 'op': 'ALL', 'conditions': ['necessary_for_archiving_research_stats', 'subject_to_article_89_safeguards', 'proportionate_and_respects_essence'], 'exceptions': []}",,pythen,scenario_70,,rule,100
+formal_201,representationVerifier,False,,pythen,scenario_70,,result,100
+formal_202,representationVerifier,medical_or_occupational_purpose,,pythen,scenario_71,,fact,100
+formal_203,representationVerifier,employment_or_social_security_duty,,pythen,scenario_71,,fact,100
+formal_204,representationVerifier,subject_to_health_secrecy,,pythen,scenario_71,,fact,100
+formal_205,representationVerifier,"{'p': 'gdpr9_processing_allowed', 'op': 'ANY', 'conditions': ['not_special_category_data', 'art9_explicit_consent', 'art9_employment_social_security', 'art9_vital_interests', 'art9_nonprofit_body', 'art9_manifestly_public', 'art9_legal_claims', 'art9_substantial_public_interest', 'art9_medicine_or_occupational_health', 'art9_public_health', 'art9_archiving_research_statistics'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_206,representationVerifier,"{'p': 'not_special_category_data', 'op': 'ALL', 'conditions': ['data_is_not_art9_special_category'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_207,representationVerifier,"{'p': 'art9_explicit_consent', 'op': 'ALL', 'conditions': ['explicit_consent_obtained'], 'exceptions': ['consent_withdrawn']}",,pythen,scenario_71,,rule,100
+formal_208,representationVerifier,"{'p': 'art9_employment_social_security', 'op': 'ALL', 'conditions': ['employment_or_social_security_duty'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_209,representationVerifier,"{'p': 'art9_vital_interests', 'op': 'ALL', 'conditions': ['vital_interests_need', 'data_subject_incapable_consent'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_210,representationVerifier,"{'p': 'art9_nonprofit_body', 'op': 'ALL', 'conditions': ['nonprofit_legitimate_activities', 'members_or_contacts_only'], 'exceptions': ['data_disclosed_outside_without_consent']}",,pythen,scenario_71,,rule,100
+formal_211,representationVerifier,"{'p': 'art9_manifestly_public', 'op': 'ALL', 'conditions': ['data_manifestly_public_by_subject'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_212,representationVerifier,"{'p': 'art9_legal_claims', 'op': 'ANY', 'conditions': ['legal_claims_context', 'courts_acting_in_judicial_capacity'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_213,representationVerifier,"{'p': 'art9_substantial_public_interest', 'op': 'ALL', 'conditions': ['substantial_public_interest_lawful'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_214,representationVerifier,"{'p': 'art9_medicine_or_occupational_health', 'op': 'ALL', 'conditions': ['medical_or_occupational_purpose', 'subject_to_health_secrecy'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_215,representationVerifier,"{'p': 'art9_public_health', 'op': 'ALL', 'conditions': ['public_health_purpose', 'subject_to_health_secrecy'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_216,representationVerifier,"{'p': 'art9_archiving_research_statistics', 'op': 'ALL', 'conditions': ['archiving_research_stats_purpose', 'appropriate_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_71,,rule,100
+formal_217,representationVerifier,False,,pythen,scenario_71,,result,100
+formal_218,representationVerifier,needed_for_employment_or_ss_law,,pythen,scenario_75,,fact,100
+formal_219,representationVerifier,data_health,,pythen,scenario_75,,fact,100
+formal_220,representationVerifier,health_or_social_care_purpose,,pythen,scenario_75,,fact,100
+formal_221,representationVerifier,under_professional_secrecy,,pythen,scenario_75,,fact,100
+formal_222,representationVerifier,no_disclosure_outside_without_consent,,pythen,scenario_75,,fact,100
+formal_223,representationVerifier,suitable_safeguards_in_place,,pythen,scenario_75,,fact,100
+formal_224,representationVerifier,"{'p': 'art9_special_category_allowed', 'op': 'ALL', 'conditions': ['is_special_category_data', 'art9_exception_applies'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_225,representationVerifier,"{'p': 'is_special_category_data', 'op': 'ANY', 'conditions': ['data_race_or_ethnicity', 'data_political_opinions', 'data_religious_or_philosophical', 'data_trade_union_membership', 'data_genetic', 'data_biometric_unique_id', 'data_health', 'data_sex_life_or_orientation'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_226,representationVerifier,"{'p': 'art9_exception_applies', 'op': 'ANY', 'conditions': ['art9_explicit_consent', 'art9_employment_social_security', 'art9_vital_interests', 'art9_nonprofit_legit_activities', 'art9_manifestly_public', 'art9_legal_claims_or_courts', 'art9_substantial_public_interest', 'art9_health_or_social_care', 'art9_public_health', 'art9_archiving_research_statistics'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_227,representationVerifier,"{'p': 'art9_explicit_consent', 'op': 'ALL', 'conditions': ['explicit_consent_obtained'], 'exceptions': ['member_state_law_bars_consent']}",,pythen,scenario_75,,rule,100
+formal_228,representationVerifier,"{'p': 'art9_employment_social_security', 'op': 'ALL', 'conditions': ['needed_for_employment_or_ss_law'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_229,representationVerifier,"{'p': 'art9_vital_interests', 'op': 'ALL', 'conditions': ['protect_vital_interests', 'data_subject_cannot_consent'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_230,representationVerifier,"{'p': 'art9_nonprofit_legit_activities', 'op': 'ALL', 'conditions': ['controller_is_nonprofit_body', 'processing_in_legit_activities', 'relates_to_members_or_contacts', 'no_disclosure_outside_without_consent'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_231,representationVerifier,"{'p': 'art9_manifestly_public', 'op': 'ALL', 'conditions': ['data_manifestly_made_public'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_232,representationVerifier,"{'p': 'art9_legal_claims_or_courts', 'op': 'ANY', 'conditions': ['needed_for_legal_claims', 'courts_acting_judicially'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_233,representationVerifier,"{'p': 'art9_substantial_public_interest', 'op': 'ALL', 'conditions': ['substantial_public_interest', 'has_union_or_member_state_law'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_234,representationVerifier,"{'p': 'art9_health_or_social_care', 'op': 'ALL', 'conditions': ['health_or_social_care_purpose', 'under_professional_secrecy'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_235,representationVerifier,"{'p': 'art9_public_health', 'op': 'ALL', 'conditions': ['public_health_purpose', 'has_union_or_member_state_law'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_236,representationVerifier,"{'p': 'art9_archiving_research_statistics', 'op': 'ALL', 'conditions': ['archiving_research_statistics_purpose', 'has_union_or_member_state_law', 'suitable_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_75,,rule,100
+formal_237,representationVerifier,False,,pythen,scenario_75,,result,100
+formal_238,representationVerifier,processing_for_direct_marketing,,pythen,scenario_103,,fact,100
+formal_239,representationVerifier,purpose_no_longer_applies,,pythen,scenario_103,,fact,100
+formal_240,representationVerifier,data_subject_objected,,pythen,scenario_103,,fact,100
+formal_241,representationVerifier,processing_based_on_consent,,pythen,scenario_103,,fact,100
+formal_242,representationVerifier,personal_data_processed,,pythen,scenario_103,,fact,100
+formal_243,representationVerifier,data_subject_withdrew_consent,,pythen,scenario_103,,fact,100
+formal_244,representationVerifier,"{'p': 'gdpr_art17_right_to_erasure', 'op': 'ANY', 'conditions': ['data_no_longer_necessary', 'consent_withdrawn', 'object_to_processing', 'processing_unlawful', 'child_data_collected'], 'exceptions': ['freedom_of_expression_required', 'legal_obligation_to_keep', 'public_interest_archiving_research', 'legal_claims_need_data']}",,pythen,scenario_103,,rule,100
+formal_245,representationVerifier,"{'p': 'data_no_longer_necessary', 'op': 'ALL', 'conditions': ['personal_data_processed', 'purpose_no_longer_applies'], 'exceptions': []}",,pythen,scenario_103,,rule,100
+formal_246,representationVerifier,"{'p': 'consent_withdrawn', 'op': 'ALL', 'conditions': ['processing_based_on_consent', 'data_subject_withdrew_consent'], 'exceptions': []}",,pythen,scenario_103,,rule,100
+formal_247,representationVerifier,"{'p': 'object_to_processing', 'op': 'ANY', 'conditions': ['objected_no_overriding_grounds', 'objected_to_direct_marketing'], 'exceptions': []}",,pythen,scenario_103,,rule,100
+formal_248,representationVerifier,"{'p': 'processing_unlawful', 'op': 'ALL', 'conditions': ['personal_data_processed', 'processing_violates_law'], 'exceptions': []}",,pythen,scenario_103,,rule,100
+formal_249,representationVerifier,"{'p': 'child_data_collected', 'op': 'ALL', 'conditions': ['data_collected_from_child', 'online_service_offered_to_child'], 'exceptions': []}",,pythen,scenario_103,,rule,100
+formal_250,representationVerifier,"{'p': 'objected_no_overriding_grounds', 'op': 'ALL', 'conditions': ['data_subject_objected', 'no_overriding_legitimate_grounds'], 'exceptions': []}",,pythen,scenario_103,,rule,100
+formal_251,representationVerifier,"{'p': 'objected_to_direct_marketing', 'op': 'ALL', 'conditions': ['data_subject_objected', 'processing_for_direct_marketing'], 'exceptions': []}",,pythen,scenario_103,,rule,100
+formal_252,representationVerifier,False,,pythen,scenario_103,,result,100
+formal_253,representationVerifier,purpose_completed_or_invalid,,pythen,scenario_114,,fact,100
+formal_254,representationVerifier,data_subject_objects,,pythen,scenario_114,,fact,100
+formal_255,representationVerifier,information_society_service_context,,pythen,scenario_114,,fact,100
+formal_256,representationVerifier,data_collected_from_child,,pythen,scenario_114,,fact,100
+formal_257,representationVerifier,consent_is_withdrawn,,pythen,scenario_114,,fact,100
+formal_258,representationVerifier,processing_is_unlawful,,pythen,scenario_114,,fact,100
+formal_259,representationVerifier,processing_based_on_consent,,pythen,scenario_114,,fact,100
+formal_260,representationVerifier,personal_data_present,,pythen,scenario_114,,fact,100
+formal_261,representationVerifier,"{'p': 'gdpr_art17_erasure_applies', 'op': 'ANY', 'conditions': ['data_no_longer_necessary', 'consent_withdrawn', 'object_to_processing', 'processing_unlawful', 'child_data_collected'], 'exceptions': ['freedom_of_expression', 'legal_obligation_to_keep', 'public_interest_archiving_research', 'legal_claims_needed']}",,pythen,scenario_114,,rule,100
+formal_262,representationVerifier,"{'p': 'data_no_longer_necessary', 'op': 'ALL', 'conditions': ['personal_data_present', 'purpose_completed_or_invalid'], 'exceptions': []}",,pythen,scenario_114,,rule,100
+formal_263,representationVerifier,"{'p': 'consent_withdrawn', 'op': 'ALL', 'conditions': ['processing_based_on_consent', 'consent_is_withdrawn'], 'exceptions': []}",,pythen,scenario_114,,rule,100
+formal_264,representationVerifier,"{'p': 'object_to_processing', 'op': 'ALL', 'conditions': ['data_subject_objects', 'no_overriding_legitimate_grounds'], 'exceptions': []}",,pythen,scenario_114,,rule,100
+formal_265,representationVerifier,"{'p': 'processing_unlawful', 'op': 'ALL', 'conditions': ['processing_is_unlawful'], 'exceptions': []}",,pythen,scenario_114,,rule,100
+formal_266,representationVerifier,"{'p': 'child_data_collected', 'op': 'ALL', 'conditions': ['data_collected_from_child', 'information_society_service_context'], 'exceptions': []}",,pythen,scenario_114,,rule,100
+formal_267,representationVerifier,False,,pythen,scenario_114,,result,100
+formal_268,representationVerifier,objection_to_direct_marketing,,pythen,scenario_118,,fact,100
+formal_269,representationVerifier,data_collected_from_child,,pythen,scenario_118,,fact,100
+formal_270,representationVerifier,consent_was_basis,,pythen,scenario_118,,fact,100
+formal_271,representationVerifier,consent_is_withdrawn,,pythen,scenario_118,,fact,100
+formal_272,representationVerifier,data_not_needed_for_purpose,,pythen,scenario_118,,fact,100
+formal_273,representationVerifier,"{'p': 'art17_erasure_applicable', 'op': 'ANY', 'conditions': ['no_longer_necessary', 'consent_withdrawn', 'object_to_processing', 'processing_unlawful', 'child_data_collected'], 'exceptions': ['freedom_of_expression', 'legal_obligation', 'public_interest_archiving_research', 'legal_claims']}",,pythen,scenario_118,,rule,100
+formal_274,representationVerifier,"{'p': 'no_longer_necessary', 'op': 'ALL', 'conditions': ['data_not_needed_for_purpose'], 'exceptions': []}",,pythen,scenario_118,,rule,100
+formal_275,representationVerifier,"{'p': 'consent_withdrawn', 'op': 'ALL', 'conditions': ['consent_was_basis', 'consent_is_withdrawn'], 'exceptions': []}",,pythen,scenario_118,,rule,100
+formal_276,representationVerifier,"{'p': 'object_to_processing', 'op': 'ANY', 'conditions': ['objection_no_overriding_grounds', 'objection_to_direct_marketing'], 'exceptions': []}",,pythen,scenario_118,,rule,100
+formal_277,representationVerifier,"{'p': 'processing_unlawful', 'op': 'ALL', 'conditions': ['processing_is_unlawful'], 'exceptions': []}",,pythen,scenario_118,,rule,100
+formal_278,representationVerifier,"{'p': 'child_data_collected', 'op': 'ALL', 'conditions': ['data_collected_from_child'], 'exceptions': []}",,pythen,scenario_118,,rule,100
+formal_279,representationVerifier,False,,pythen,scenario_118,,result,100
+formal_280,representationVerifier,withdrawal_received,,pythen,scenario_119,,fact,100
+formal_281,representationVerifier,purpose_fulfilled,,pythen,scenario_119,,fact,100
+formal_282,representationVerifier,no_new_compatible_purpose,,pythen,scenario_119,,fact,100
+formal_283,representationVerifier,collected_from_child,,pythen,scenario_119,,fact,100
+formal_284,representationVerifier,online_service_context,,pythen,scenario_119,,fact,100
+formal_285,representationVerifier,legal_obligation_to_keep,,pythen,scenario_119,,fact,100
+formal_286,representationVerifier,objection_received,,pythen,scenario_119,,fact,100
+formal_287,representationVerifier,consent_was_legal_basis,,pythen,scenario_119,,fact,100
+formal_288,representationVerifier,"{'p': 'gdpr_art17_erasure_applies', 'op': 'ANY', 'conditions': ['data_no_longer_necessary', 'consent_withdrawn', 'object_to_processing', 'processing_unlawful', 'child_data_collected'], 'exceptions': ['freedom_of_expression_needed', 'legal_obligation_to_keep', 'public_interest_archiving_research', 'legal_claims_needed']}",,pythen,scenario_119,,rule,100
+formal_289,representationVerifier,"{'p': 'data_no_longer_necessary', 'op': 'ALL', 'conditions': ['purpose_fulfilled', 'no_new_compatible_purpose'], 'exceptions': []}",,pythen,scenario_119,,rule,100
+formal_290,representationVerifier,"{'p': 'consent_withdrawn', 'op': 'ALL', 'conditions': ['consent_was_legal_basis', 'withdrawal_received'], 'exceptions': []}",,pythen,scenario_119,,rule,100
+formal_291,representationVerifier,"{'p': 'object_to_processing', 'op': 'ALL', 'conditions': ['objection_received', 'no_overriding_legitimate_grounds'], 'exceptions': []}",,pythen,scenario_119,,rule,100
+formal_292,representationVerifier,"{'p': 'processing_unlawful', 'op': 'ALL', 'conditions': ['processing_violates_gdpr'], 'exceptions': []}",,pythen,scenario_119,,rule,100
+formal_293,representationVerifier,"{'p': 'child_data_collected', 'op': 'ALL', 'conditions': ['collected_from_child', 'online_service_context'], 'exceptions': []}",,pythen,scenario_119,,rule,100
+formal_294,representationVerifier,False,,pythen,scenario_119,,result,100
+formal_295,representationVerifier,request_rights_info,,pythen,scenario_131,,fact,100
+formal_296,representationVerifier,request_confirm_processing,,pythen,scenario_131,,fact,100
+formal_297,representationVerifier,request_retention_period,,pythen,scenario_131,,fact,100
+formal_298,representationVerifier,response_due_1_month,,pythen,scenario_131,,fact,100
+formal_299,representationVerifier,request_data_categories,,pythen,scenario_131,,fact,100
+formal_300,representationVerifier,request_purposes,,pythen,scenario_131,,fact,100
+formal_301,representationVerifier,controller_determines_purposes_means,,pythen,scenario_131,,fact,100
+formal_302,representationVerifier,response_clear_transparent,,pythen,scenario_131,,fact,100
+formal_303,representationVerifier,request_access_copy,,pythen,scenario_131,,fact,100
+formal_304,representationVerifier,request_recipients,,pythen,scenario_131,,fact,100
+formal_305,representationVerifier,"{'p': 'gdpr_a15_right_of_access', 'op': 'ALL', 'conditions': ['access_request_made', 'controller_is_data_controller'], 'exceptions': ['request_manifestly_unfounded', 'request_excessive']}",,pythen,scenario_131,,rule,100
+formal_306,representationVerifier,"{'p': 'access_request_made', 'op': 'ANY', 'conditions': ['request_confirm_processing', 'request_access_copy', 'request_processing_info'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_307,representationVerifier,"{'p': 'request_processing_info', 'op': 'ANY', 'conditions': ['request_purposes', 'request_data_categories', 'request_recipients', 'request_retention_period', 'request_rights_info'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_308,representationVerifier,"{'p': 'controller_is_data_controller', 'op': 'ALL', 'conditions': ['controller_determines_purposes_means'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_309,representationVerifier,"{'p': 'response_obligation_scope', 'op': 'ALL', 'conditions': ['gdpr_a15_right_of_access'], 'exceptions': ['cannot_verify_identity']}",,pythen,scenario_131,,rule,100
+formal_310,representationVerifier,"{'p': 'must_confirm_processing_status', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'request_confirm_processing'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_311,representationVerifier,"{'p': 'must_provide_access_copy', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'request_access_copy'], 'exceptions': ['adversely_affects_others_rights']}",,pythen,scenario_131,,rule,100
+formal_312,representationVerifier,"{'p': 'must_provide_purposes_info', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'request_purposes'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_313,representationVerifier,"{'p': 'must_provide_categories_info', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'request_data_categories'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_314,representationVerifier,"{'p': 'must_provide_recipients_info', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'request_recipients'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_315,representationVerifier,"{'p': 'must_provide_retention_info', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'request_retention_period'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_316,representationVerifier,"{'p': 'must_provide_rights_info', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'request_rights_info'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_317,representationVerifier,"{'p': 'must_respond_within_one_month', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'response_due_1_month'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_318,representationVerifier,"{'p': 'must_respond_in_accessible_form', 'op': 'ALL', 'conditions': ['response_obligation_scope', 'response_clear_transparent'], 'exceptions': []}",,pythen,scenario_131,,rule,100
+formal_319,representationVerifier,False,,pythen,scenario_131,,result,100
+formal_320,representationVerifier,processing_basis_legitimate_interests,,pythen,scenario_136,,fact,100
+formal_321,representationVerifier,data_subject_objects,,pythen,scenario_136,,fact,100
+formal_322,representationVerifier,automated_decision_making_involved,,pythen,scenario_136,,fact,100
+formal_323,representationVerifier,processing_is_direct_marketing,,pythen,scenario_136,,fact,100
+formal_324,representationVerifier,"{'p': 'gdpr_a21_right_to_object', 'op': 'ANY', 'conditions': ['a21_object_direct_marketing', 'a21_object_legitimate_interests', 'a21_object_automated_decisions'], 'exceptions': []}",,pythen,scenario_136,,rule,100
+formal_325,representationVerifier,"{'p': 'a21_object_direct_marketing', 'op': 'ALL', 'conditions': ['processing_is_direct_marketing', 'data_subject_objects'], 'exceptions': []}",,pythen,scenario_136,,rule,100
+formal_326,representationVerifier,"{'p': 'a21_object_legitimate_interests', 'op': 'ALL', 'conditions': ['processing_basis_legitimate_interests', 'data_subject_objects'], 'exceptions': ['controller_has_compelling_overriding']}",,pythen,scenario_136,,rule,100
+formal_327,representationVerifier,"{'p': 'a21_object_automated_decisions', 'op': 'ALL', 'conditions': ['automated_decision_making_involved', 'data_subject_requests_human_review'], 'exceptions': []}",,pythen,scenario_136,,rule,100
+formal_328,representationVerifier,False,,pythen,scenario_136,,result,100
+formal_329,representationVerifier,data_subject_objects,,pythen,scenario_138,,fact,100
+formal_330,representationVerifier,processing_basis_legitimate_interests,,pythen,scenario_138,,fact,100
+formal_331,representationVerifier,decision_is_solely_automated,,pythen,scenario_138,,fact,100
+formal_332,representationVerifier,processing_is_direct_marketing,,pythen,scenario_138,,fact,100
+formal_333,representationVerifier,"{'p': 'art21_right_to_object_applies', 'op': 'ANY', 'conditions': ['obj_direct_marketing', 'obj_legitimate_interests', 'obj_automated_decision_making'], 'exceptions': []}",,pythen,scenario_138,,rule,100
+formal_334,representationVerifier,"{'p': 'obj_direct_marketing', 'op': 'ALL', 'conditions': ['data_subject_objects', 'processing_is_direct_marketing'], 'exceptions': []}",,pythen,scenario_138,,rule,100
+formal_335,representationVerifier,"{'p': 'obj_legitimate_interests', 'op': 'ALL', 'conditions': ['data_subject_objects', 'processing_basis_legitimate_interests'], 'exceptions': ['controller_has_compelling_interests']}",,pythen,scenario_138,,rule,100
+formal_336,representationVerifier,"{'p': 'obj_automated_decision_making', 'op': 'ALL', 'conditions': ['data_subject_objects', 'decision_is_solely_automated', 'decision_has_legal_or_similar_effect'], 'exceptions': []}",,pythen,scenario_138,,rule,100
+formal_337,representationVerifier,False,,pythen,scenario_138,,result,100
+formal_338,representationVerifier,data_subject_objects,,pythen,scenario_139,,fact,100
+formal_339,representationVerifier,processing_basis_legitimate_interests,,pythen,scenario_139,,fact,100
+formal_340,representationVerifier,processing_is_direct_marketing,,pythen,scenario_139,,fact,100
+formal_341,representationVerifier,"{'p': 'art21_right_to_object_applies', 'op': 'ANY', 'conditions': ['object_to_direct_marketing', 'object_to_legitimate_interests', 'object_to_automated_decision'], 'exceptions': []}",,pythen,scenario_139,,rule,100
+formal_342,representationVerifier,"{'p': 'object_to_direct_marketing', 'op': 'ALL', 'conditions': ['processing_is_direct_marketing', 'data_subject_objects'], 'exceptions': []}",,pythen,scenario_139,,rule,100
+formal_343,representationVerifier,"{'p': 'object_to_legitimate_interests', 'op': 'ALL', 'conditions': ['processing_basis_legitimate_interests', 'data_subject_objects'], 'exceptions': ['controller_has_compelling_overriding']}",,pythen,scenario_139,,rule,100
+formal_344,representationVerifier,"{'p': 'object_to_automated_decision', 'op': 'ALL', 'conditions': ['processing_is_automated_decision', 'data_subject_objects'], 'exceptions': ['human_intervention_provided']}",,pythen,scenario_139,,rule,100
+formal_345,representationVerifier,False,,pythen,scenario_139,,result,100
+formal_346,representationVerifier,data_subject_objects,,pythen,scenario_142,,fact,100
+formal_347,representationVerifier,processing_basis_legitimate_interests,,pythen,scenario_142,,fact,100
+formal_348,representationVerifier,processing_is_direct_marketing,,pythen,scenario_142,,fact,100
+formal_349,representationVerifier,"{'p': 'gdpr_a21_right_to_object', 'op': 'ANY', 'conditions': ['a21_object_direct_marketing', 'a21_object_legitimate_interests', 'a21_object_automated_decision'], 'exceptions': []}",,pythen,scenario_142,,rule,100
+formal_350,representationVerifier,"{'p': 'a21_object_direct_marketing', 'op': 'ALL', 'conditions': ['data_subject_objects', 'processing_is_direct_marketing'], 'exceptions': []}",,pythen,scenario_142,,rule,100
+formal_351,representationVerifier,"{'p': 'a21_object_legitimate_interests', 'op': 'ALL', 'conditions': ['data_subject_objects', 'processing_basis_legitimate_interests'], 'exceptions': ['controller_has_compelling_overriding_grounds']}",,pythen,scenario_142,,rule,100
+formal_352,representationVerifier,"{'p': 'a21_object_automated_decision', 'op': 'ALL', 'conditions': ['data_subject_objects', 'processing_is_automated_decision_making'], 'exceptions': []}",,pythen,scenario_142,,rule,100
+formal_353,representationVerifier,False,,pythen,scenario_142,,result,100
+formal_354,representationVerifier,is_processor,,pythen,scenario_144,,fact,100
+formal_355,representationVerifier,encryption_in_place,,pythen,scenario_144,,fact,100
+formal_356,representationVerifier,risk_assessment_done,,pythen,scenario_144,,fact,100
+formal_357,representationVerifier,"{'p': 'GDPR32_security_of_processing', 'op': 'ALL', 'conditions': ['scope_controller_or_processor', 'measures_appropriate_to_risk'], 'exceptions': ['no_personal_data_processed']}",,pythen,scenario_144,,rule,100
+formal_358,representationVerifier,"{'p': 'scope_controller_or_processor', 'op': 'ANY', 'conditions': ['is_controller', 'is_processor'], 'exceptions': []}",,pythen,scenario_144,,rule,100
+formal_359,representationVerifier,"{'p': 'measures_appropriate_to_risk', 'op': 'ALL', 'conditions': ['risk_assessment_done', 'tech_and_org_measures_set'], 'exceptions': ['risk_level_unknown']}",,pythen,scenario_144,,rule,100
+formal_360,representationVerifier,"{'p': 'tech_and_org_measures_set', 'op': 'ALL', 'conditions': ['confidentiality_integrity_controls', 'availability_resilience_controls', 'restore_controls', 'testing_controls', 'incident_response_controls'], 'exceptions': ['measures_not_matched_to_risk']}",,pythen,scenario_144,,rule,100
+formal_361,representationVerifier,"{'p': 'confidentiality_integrity_controls', 'op': 'ANY', 'conditions': ['encryption_in_place', 'pseudonymization_in_place', 'access_controls_in_place'], 'exceptions': []}",,pythen,scenario_144,,rule,100
+formal_362,representationVerifier,"{'p': 'availability_resilience_controls', 'op': 'ANY', 'conditions': ['redundancy_in_place', 'monitoring_in_place', 'resilience_plan_in_place'], 'exceptions': []}",,pythen,scenario_144,,rule,100
+formal_363,representationVerifier,"{'p': 'restore_controls', 'op': 'ALL', 'conditions': ['backup_in_place', 'restore_process_documented', 'restore_time_objectives_set'], 'exceptions': ['no_restore_testing']}",,pythen,scenario_144,,rule,100
+formal_364,representationVerifier,"{'p': 'testing_controls', 'op': 'ALL', 'conditions': ['regular_security_testing', 'vulnerability_management', 'control_effectiveness_review'], 'exceptions': ['testing_not_regular']}",,pythen,scenario_144,,rule,100
+formal_365,representationVerifier,"{'p': 'incident_response_controls', 'op': 'ALL', 'conditions': ['incident_response_plan', 'incident_detection_process', 'incident_roles_assigned'], 'exceptions': ['no_incident_response_procedure']}",,pythen,scenario_144,,rule,100
+formal_366,representationVerifier,False,,pythen,scenario_144,,result,100
+formal_367,representationVerifier,backup_and_restore_in_place,,pythen,scenario_148,,fact,100
+formal_368,representationVerifier,encryption_in_use,,pythen,scenario_148,,fact,100
+formal_369,representationVerifier,processes_personal_data,,pythen,scenario_148,,fact,100
+formal_370,representationVerifier,is_controller_or_processor,,pythen,scenario_148,,fact,100
+formal_371,representationVerifier,ensure_availability_resilience,,pythen,scenario_148,,fact,100
+formal_372,representationVerifier,ensure_confidentiality_integrity,,pythen,scenario_148,,fact,100
+formal_373,representationVerifier,"{'p': 'gdpr_art32_security_processing', 'op': 'ALL', 'conditions': ['is_controller_or_processor', 'processes_personal_data', 'art32_measures_appropriate_to_risk'], 'exceptions': ['no_personal_data_processed']}",,pythen,scenario_148,,rule,100
+formal_374,representationVerifier,"{'p': 'art32_measures_appropriate_to_risk', 'op': 'ALL', 'conditions': ['risk_assessed', 'measures_match_risk_level', 'baseline_security_measures'], 'exceptions': ['risk_not_assessed']}",,pythen,scenario_148,,rule,100
+formal_375,representationVerifier,"{'p': 'baseline_security_measures', 'op': 'ANY', 'conditions': ['encryption_or_pseudonymization', 'availability_and_resilience', 'restore_availability_access', 'regular_testing_assessment', 'incident_response_procedures'], 'exceptions': ['no_security_measures']}",,pythen,scenario_148,,rule,100
+formal_376,representationVerifier,"{'p': 'encryption_or_pseudonymization', 'op': 'ANY', 'conditions': ['encryption_in_use', 'pseudonymization_in_use'], 'exceptions': ['encryption_and_pseudonymization_absent']}",,pythen,scenario_148,,rule,100
+formal_377,representationVerifier,"{'p': 'availability_and_resilience', 'op': 'ALL', 'conditions': ['ensure_confidentiality_integrity', 'ensure_availability_resilience'], 'exceptions': ['systems_not_resilient']}",,pythen,scenario_148,,rule,100
+formal_378,representationVerifier,"{'p': 'restore_availability_access', 'op': 'ALL', 'conditions': ['backup_and_restore_in_place', 'restore_timely_after_incident'], 'exceptions': ['no_restore_capability']}",,pythen,scenario_148,,rule,100
+formal_379,representationVerifier,"{'p': 'regular_testing_assessment', 'op': 'ALL', 'conditions': ['security_testing_regular', 'measure_effectiveness_evaluated'], 'exceptions': ['no_regular_testing']}",,pythen,scenario_148,,rule,100
+formal_380,representationVerifier,"{'p': 'incident_response_procedures', 'op': 'ALL', 'conditions': ['incident_response_plan_exists', 'incident_response_exercised'], 'exceptions': ['no_incident_response_plan']}",,pythen,scenario_148,,rule,100
+formal_381,representationVerifier,False,,pythen,scenario_148,,result,100
+formal_382,representationVerifier,data_accuracy_contested_by_subject,,pythen,scenario_199,,fact,100
+formal_383,representationVerifier,override_verification_pending,,pythen,scenario_199,,fact,100
+formal_384,representationVerifier,"{'p': 'gdpr_a18_restrict_processing', 'op': 'ANY', 'conditions': ['a18_accuracy_contested', 'a18_unlawful_opposes_erasure', 'a18_no_longer_needed_legal_claims', 'a18_objected_pending_override_check'], 'exceptions': []}",,pythen,scenario_199,,rule,100
+formal_385,representationVerifier,"{'p': 'a18_accuracy_contested', 'op': 'ALL', 'conditions': ['data_accuracy_contested_by_subject'], 'exceptions': []}",,pythen,scenario_199,,rule,100
+formal_386,representationVerifier,"{'p': 'a18_unlawful_opposes_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_199,,rule,100
+formal_387,representationVerifier,"{'p': 'a18_no_longer_needed_legal_claims', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'subject_needs_for_legal_claims'], 'exceptions': []}",,pythen,scenario_199,,rule,100
+formal_388,representationVerifier,"{'p': 'a18_objected_pending_override_check', 'op': 'ALL', 'conditions': ['subject_objected_to_processing', 'override_verification_pending'], 'exceptions': []}",,pythen,scenario_199,,rule,100
+formal_389,representationVerifier,False,,pythen,scenario_199,,result,100
+formal_390,representationVerifier,subject_has_objected_to_processing,,pythen,scenario_200,,fact,100
+formal_391,representationVerifier,data_accuracy_contested_by_subject,,pythen,scenario_200,,fact,100
+formal_392,representationVerifier,override_verification_pending,,pythen,scenario_200,,fact,100
+formal_393,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['art18_a_accuracy_contested', 'art18_b_unlawful_opposes_erasure', 'art18_c_no_longer_needed_legal_claims', 'art18_d_objected_pending_override_check'], 'exceptions': []}",,pythen,scenario_200,,rule,100
+formal_394,representationVerifier,"{'p': 'art18_a_accuracy_contested', 'op': 'ALL', 'conditions': ['data_accuracy_contested_by_subject'], 'exceptions': []}",,pythen,scenario_200,,rule,100
+formal_395,representationVerifier,"{'p': 'art18_b_unlawful_opposes_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_200,,rule,100
+formal_396,representationVerifier,"{'p': 'art18_c_no_longer_needed_legal_claims', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'subject_requires_for_legal_claims'], 'exceptions': []}",,pythen,scenario_200,,rule,100
+formal_397,representationVerifier,"{'p': 'art18_d_objected_pending_override_check', 'op': 'ALL', 'conditions': ['subject_has_objected_to_processing', 'override_verification_pending'], 'exceptions': []}",,pythen,scenario_200,,rule,100
+formal_398,representationVerifier,False,,pythen,scenario_200,,result,100
+formal_399,representationVerifier,accuracy_is_contested_by_data_subject,,pythen,scenario_226,,fact,100
+formal_400,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['accuracy_contested_case', 'unlawful_processing_no_erasure_case', 'legal_claims_retention_case', 'objection_pending_verification_case'], 'exceptions': []}",,pythen,scenario_226,,rule,100
+formal_401,representationVerifier,"{'p': 'accuracy_contested_case', 'op': 'ALL', 'conditions': ['accuracy_is_contested_by_data_subject'], 'exceptions': []}",,pythen,scenario_226,,rule,100
+formal_402,representationVerifier,"{'p': 'unlawful_processing_no_erasure_case', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'data_subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_226,,rule,100
+formal_403,representationVerifier,"{'p': 'legal_claims_retention_case', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_personal_data', 'data_subject_requires_for_legal_claims'], 'exceptions': []}",,pythen,scenario_226,,rule,100
+formal_404,representationVerifier,"{'p': 'objection_pending_verification_case', 'op': 'ALL', 'conditions': ['data_subject_objected_to_processing', 'verification_of_legitimate_interests_pending'], 'exceptions': []}",,pythen,scenario_226,,rule,100
+formal_405,representationVerifier,False,,pythen,scenario_226,,result,100
+formal_406,representationVerifier,data_accuracy_contested_by_subject,,pythen,scenario_234,,fact,100
+formal_407,representationVerifier,"{'p': 'art18_restriction_of_processing', 'op': 'ANY', 'conditions': ['art18a_accuracy_contested', 'art18b_unlawful_and_no_erasure', 'art18c_needed_for_legal_claims', 'art18d_objection_pending_balance_test'], 'exceptions': []}",,pythen,scenario_234,,rule,100
+formal_408,representationVerifier,"{'p': 'art18a_accuracy_contested', 'op': 'ALL', 'conditions': ['data_accuracy_contested_by_subject'], 'exceptions': []}",,pythen,scenario_234,,rule,100
+formal_409,representationVerifier,"{'p': 'art18b_unlawful_and_no_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_234,,rule,100
+formal_410,representationVerifier,"{'p': 'art18c_needed_for_legal_claims', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'subject_needs_data_for_legal_claims'], 'exceptions': []}",,pythen,scenario_234,,rule,100
+formal_411,representationVerifier,"{'p': 'art18d_objection_pending_balance_test', 'op': 'ALL', 'conditions': ['subject_objected_to_processing', 'verification_of_override_pending'], 'exceptions': []}",,pythen,scenario_234,,rule,100
+formal_412,representationVerifier,False,,pythen,scenario_234,,result,100
+formal_413,representationVerifier,data_accuracy_contested_by_subject,,pythen,scenario_235,,fact,100
+formal_414,representationVerifier,subject_objected_to_processing,,pythen,scenario_235,,fact,100
+formal_415,representationVerifier,"{'p': 'art18_restriction_right', 'op': 'ANY', 'conditions': ['art18_a_accuracy_contested', 'art18_b_unlawful_no_erasure', 'art18_c_no_need_legal_claims', 'art18_d_objected_pending_verify'], 'exceptions': []}",,pythen,scenario_235,,rule,100
+formal_416,representationVerifier,"{'p': 'art18_a_accuracy_contested', 'op': 'ALL', 'conditions': ['data_accuracy_contested_by_subject'], 'exceptions': []}",,pythen,scenario_235,,rule,100
+formal_417,representationVerifier,"{'p': 'art18_b_unlawful_no_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_235,,rule,100
+formal_418,representationVerifier,"{'p': 'art18_c_no_need_legal_claims', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'subject_needs_data_for_legal_claims'], 'exceptions': []}",,pythen,scenario_235,,rule,100
+formal_419,representationVerifier,"{'p': 'art18_d_objected_pending_verify', 'op': 'ALL', 'conditions': ['subject_objected_to_processing', 'legitimate_interest_override_unverified'], 'exceptions': []}",,pythen,scenario_235,,rule,100
+formal_420,representationVerifier,False,,pythen,scenario_235,,result,100
+formal_421,representationVerifier,data_accuracy_contested_by_subject,,pythen,scenario_237,,fact,100
+formal_422,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['art18_a_accuracy_contested', 'art18_b_unlawful_opposes_erasure', 'art18_c_no_longer_needed_legal_claims', 'art18_d_objected_pending_override_check'], 'exceptions': []}",,pythen,scenario_237,,rule,100
+formal_423,representationVerifier,"{'p': 'art18_a_accuracy_contested', 'op': 'ALL', 'conditions': ['data_accuracy_contested_by_subject'], 'exceptions': []}",,pythen,scenario_237,,rule,100
+formal_424,representationVerifier,"{'p': 'art18_b_unlawful_opposes_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_237,,rule,100
+formal_425,representationVerifier,"{'p': 'art18_c_no_longer_needed_legal_claims', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'subject_needs_for_legal_claims'], 'exceptions': []}",,pythen,scenario_237,,rule,100
+formal_426,representationVerifier,"{'p': 'art18_d_objected_pending_override_check', 'op': 'ALL', 'conditions': ['subject_objected_to_processing', 'override_verification_pending'], 'exceptions': []}",,pythen,scenario_237,,rule,100
+formal_427,representationVerifier,False,,pythen,scenario_237,,result,100
+formal_428,representationVerifier,data_accuracy_contested,,pythen,scenario_240,,fact,100
+formal_429,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['accuracy_contested_case', 'unlawful_processing_no_erasure_case', 'legal_claims_need_case', 'objection_pending_verification_case'], 'exceptions': []}",,pythen,scenario_240,,rule,100
+formal_430,representationVerifier,"{'p': 'accuracy_contested_case', 'op': 'ALL', 'conditions': ['data_accuracy_contested'], 'exceptions': []}",,pythen,scenario_240,,rule,100
+formal_431,representationVerifier,"{'p': 'unlawful_processing_no_erasure_case', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'data_subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_240,,rule,100
+formal_432,representationVerifier,"{'p': 'legal_claims_need_case', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'data_subject_needs_for_legal_claims'], 'exceptions': []}",,pythen,scenario_240,,rule,100
+formal_433,representationVerifier,"{'p': 'objection_pending_verification_case', 'op': 'ALL', 'conditions': ['data_subject_objected_to_processing', 'verification_of_legitimate_interests_pending'], 'exceptions': []}",,pythen,scenario_240,,rule,100
+formal_434,representationVerifier,False,,pythen,scenario_240,,result,100
+formal_435,representationVerifier,data_accuracy_contested_by_subject,,pythen,scenario_241,,fact,100
+formal_436,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['accuracy_contested', 'unlawful_processing_opposes_erasure', 'no_longer_needed_but_legal_claims_need', 'objected_pending_legitimate_interest_check'], 'exceptions': []}",,pythen,scenario_241,,rule,100
+formal_437,representationVerifier,"{'p': 'accuracy_contested', 'op': 'ALL', 'conditions': ['data_accuracy_contested_by_subject'], 'exceptions': []}",,pythen,scenario_241,,rule,100
+formal_438,representationVerifier,"{'p': 'unlawful_processing_opposes_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_241,,rule,100
+formal_439,representationVerifier,"{'p': 'no_longer_needed_but_legal_claims_need', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'subject_needs_for_legal_claims'], 'exceptions': []}",,pythen,scenario_241,,rule,100
+formal_440,representationVerifier,"{'p': 'objected_pending_legitimate_interest_check', 'op': 'ALL', 'conditions': ['subject_objected_to_processing', 'legitimate_interest_override_unverified'], 'exceptions': []}",,pythen,scenario_241,,rule,100
+formal_441,representationVerifier,False,,pythen,scenario_241,,result,100
+formal_442,representationVerifier,data_subject_contests_accuracy,,pythen,scenario_244,,fact,100
+formal_443,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['accuracy_contested', 'unlawful_processing_oppose_erasure', 'no_longer_needed_but_legal_claims_need', 'objected_pending_legitimate_interest_check'], 'exceptions': []}",,pythen,scenario_244,,rule,100
+formal_444,representationVerifier,"{'p': 'accuracy_contested', 'op': 'ALL', 'conditions': ['data_subject_contests_accuracy'], 'exceptions': []}",,pythen,scenario_244,,rule,100
+formal_445,representationVerifier,"{'p': 'unlawful_processing_oppose_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'data_subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_244,,rule,100
+formal_446,representationVerifier,"{'p': 'no_longer_needed_but_legal_claims_need', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'data_subject_needs_for_legal_claims'], 'exceptions': []}",,pythen,scenario_244,,rule,100
+formal_447,representationVerifier,"{'p': 'objected_pending_legitimate_interest_check', 'op': 'ALL', 'conditions': ['data_subject_objected_to_processing', 'legitimate_interest_override_unverified'], 'exceptions': []}",,pythen,scenario_244,,rule,100
+formal_448,representationVerifier,False,,pythen,scenario_244,,result,100
+formal_449,representationVerifier,technically_feasible,,pythen,scenario_249,,fact,100
+formal_450,representationVerifier,direct_transmission_requested,,pythen,scenario_249,,fact,100
+formal_451,representationVerifier,request_to_receive_data,,pythen,scenario_249,,fact,100
+formal_452,representationVerifier,structured_common_machine_format,,pythen,scenario_249,,fact,100
+formal_453,representationVerifier,personal_data_relates_to_ds,,pythen,scenario_249,,fact,100
+formal_454,representationVerifier,request_to_transmit_data,,pythen,scenario_249,,fact,100
+formal_455,representationVerifier,personal_data_processed,,pythen,scenario_249,,fact,100
+formal_456,representationVerifier,ds_makes_request,,pythen,scenario_249,,fact,100
+formal_457,representationVerifier,"{'p': 'gdpr_art20_data_portability', 'op': 'ALL', 'conditions': ['ds_requests_portability', 'data_concerns_data_subject'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_458,representationVerifier,"{'p': 'ds_requests_portability', 'op': 'ANY', 'conditions': ['ds_requests_receive_copy', 'ds_requests_transmit_to_controller'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_459,representationVerifier,"{'p': 'ds_requests_receive_copy', 'op': 'ALL', 'conditions': ['ds_makes_request', 'request_to_receive_data'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_460,representationVerifier,"{'p': 'ds_requests_transmit_to_controller', 'op': 'ALL', 'conditions': ['ds_makes_request', 'request_to_transmit_data'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_461,representationVerifier,"{'p': 'data_concerns_data_subject', 'op': 'ALL', 'conditions': ['personal_data_processed', 'personal_data_relates_to_ds'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_462,representationVerifier,"{'p': 'right_to_receive_data_copy', 'op': 'ALL', 'conditions': ['gdpr_art20_data_portability', 'request_to_receive_data'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_463,representationVerifier,"{'p': 'provide_in_portable_format', 'op': 'ALL', 'conditions': ['right_to_receive_data_copy', 'structured_common_machine_format'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_464,representationVerifier,"{'p': 'right_to_transmit_without_hindrance', 'op': 'ALL', 'conditions': ['gdpr_art20_data_portability', 'request_to_transmit_data'], 'exceptions': ['controller_imposes_hindrance']}",,pythen,scenario_249,,rule,100
+formal_465,representationVerifier,"{'p': 'controller_direct_transmission_duty', 'op': 'ALL', 'conditions': ['right_to_transmit_without_hindrance', 'direct_transmission_requested', 'technically_feasible'], 'exceptions': []}",,pythen,scenario_249,,rule,100
+formal_466,representationVerifier,False,,pythen,scenario_249,,result,100
+formal_467,representationVerifier,ds_requests_direct_transfer,,pythen,scenario_257,,fact,100
+formal_468,representationVerifier,ds_identified_or_verifiable,,pythen,scenario_257,,fact,100
+formal_469,representationVerifier,transfer_technically_feasible,,pythen,scenario_257,,fact,100
+formal_470,representationVerifier,personal_data_concerns_data_subject,,pythen,scenario_257,,fact,100
+formal_471,representationVerifier,format_commonly_used,,pythen,scenario_257,,fact,100
+formal_472,representationVerifier,format_structured,,pythen,scenario_257,,fact,100
+formal_473,representationVerifier,transmit_without_hindrance,,pythen,scenario_257,,fact,100
+formal_474,representationVerifier,format_machine_readable,,pythen,scenario_257,,fact,100
+formal_475,representationVerifier,"{'p': 'gdpr_art20_data_portability', 'op': 'ALL', 'conditions': ['ds_requests_portability', 'controller_holds_ds_personal_data'], 'exceptions': ['request_manifestly_unfounded_or_excessive']}",,pythen,scenario_257,,rule,100
+formal_476,representationVerifier,"{'p': 'ds_requests_portability', 'op': 'ANY', 'conditions': ['ds_requests_receive_copy', 'ds_requests_transmit_to_controller'], 'exceptions': []}",,pythen,scenario_257,,rule,100
+formal_477,representationVerifier,"{'p': 'ds_requests_receive_copy', 'op': 'ALL', 'conditions': ['ds_identified_or_verifiable', 'request_for_structured_machine_format'], 'exceptions': ['cannot_verify_ds_identity']}",,pythen,scenario_257,,rule,100
+formal_478,representationVerifier,"{'p': 'ds_requests_transmit_to_controller', 'op': 'ALL', 'conditions': ['ds_identified_or_verifiable', 'request_to_transmit_to_new_controller'], 'exceptions': ['cannot_verify_ds_identity']}",,pythen,scenario_257,,rule,100
+formal_479,representationVerifier,"{'p': 'controller_holds_ds_personal_data', 'op': 'ALL', 'conditions': ['personal_data_concerns_data_subject'], 'exceptions': ['data_not_held_by_controller']}",,pythen,scenario_257,,rule,100
+formal_480,representationVerifier,"{'p': 'request_for_structured_machine_format', 'op': 'ALL', 'conditions': ['format_structured', 'format_commonly_used', 'format_machine_readable'], 'exceptions': []}",,pythen,scenario_257,,rule,100
+formal_481,representationVerifier,"{'p': 'request_to_transmit_to_new_controller', 'op': 'ANY', 'conditions': ['transmit_without_hindrance', 'direct_transfer_technically_feasible'], 'exceptions': []}",,pythen,scenario_257,,rule,100
+formal_482,representationVerifier,"{'p': 'direct_transfer_technically_feasible', 'op': 'ALL', 'conditions': ['ds_requests_direct_transfer', 'transfer_technically_feasible'], 'exceptions': []}",,pythen,scenario_257,,rule,100
+formal_483,representationVerifier,False,,pythen,scenario_257,,result,100
+formal_484,representationVerifier,direct_transfer_technically_feasible,,pythen,scenario_262,,fact,100
+formal_485,representationVerifier,format_structured_commonly_used_machine,,pythen,scenario_262,,fact,100
+formal_486,representationVerifier,request_is_to_receive_personal_data,,pythen,scenario_262,,fact,100
+formal_487,representationVerifier,processing_based_on_consent_or_contract,,pythen,scenario_262,,fact,100
+formal_488,representationVerifier,data_is_provided_by_data_subject,,pythen,scenario_262,,fact,100
+formal_489,representationVerifier,personal_data_concerns_data_subject,,pythen,scenario_262,,fact,100
+formal_490,representationVerifier,request_is_to_transmit_personal_data,,pythen,scenario_262,,fact,100
+formal_491,representationVerifier,request_is_direct_transfer,,pythen,scenario_262,,fact,100
+formal_492,representationVerifier,processing_is_by_automated_means,,pythen,scenario_262,,fact,100
+formal_493,representationVerifier,"{'p': 'gdpr_a20_data_portability', 'op': 'ALL', 'conditions': ['ds_requests_portable_copy', 'controller_processes_ds_personal_data'], 'exceptions': ['processing_not_by_automated_means', 'processing_not_based_on_consent_or_contract', 'request_manifestly_unfounded_or_excessive', 'adversely_affects_rights_of_others']}",,pythen,scenario_262,,rule,100
+formal_494,representationVerifier,"{'p': 'ds_requests_portable_copy', 'op': 'ANY', 'conditions': ['ds_requests_data_in_machine_readable', 'ds_requests_transmit_to_other_controller', 'ds_requests_direct_controller_to_controller'], 'exceptions': []}",,pythen,scenario_262,,rule,100
+formal_495,representationVerifier,"{'p': 'controller_processes_ds_personal_data', 'op': 'ALL', 'conditions': ['personal_data_concerns_data_subject', 'data_is_provided_by_data_subject', 'processing_is_by_automated_means', 'processing_based_on_consent_or_contract'], 'exceptions': []}",,pythen,scenario_262,,rule,100
+formal_496,representationVerifier,"{'p': 'ds_requests_data_in_machine_readable', 'op': 'ALL', 'conditions': ['request_is_to_receive_personal_data', 'format_structured_commonly_used_machine'], 'exceptions': []}",,pythen,scenario_262,,rule,100
+formal_497,representationVerifier,"{'p': 'ds_requests_transmit_to_other_controller', 'op': 'ALL', 'conditions': ['request_is_to_transmit_personal_data', 'transmission_without_hindrance_requested'], 'exceptions': []}",,pythen,scenario_262,,rule,100
+formal_498,representationVerifier,"{'p': 'ds_requests_direct_controller_to_controller', 'op': 'ALL', 'conditions': ['request_is_direct_transfer', 'direct_transfer_technically_feasible'], 'exceptions': []}",,pythen,scenario_262,,rule,100
+formal_499,representationVerifier,False,,pythen,scenario_262,,result,100
+formal_500,representationVerifier,provide_structured_format,,pythen,scenario_266,,fact,100
+formal_501,representationVerifier,direct_transfer_technically_feasible,,pythen,scenario_266,,fact,100
+formal_502,representationVerifier,provide_machine_readable_format,,pythen,scenario_266,,fact,100
+formal_503,representationVerifier,request_from_data_subject,,pythen,scenario_266,,fact,100
+formal_504,representationVerifier,request_for_personal_data_copy,,pythen,scenario_266,,fact,100
+formal_505,representationVerifier,data_relates_to_requesting_subject,,pythen,scenario_266,,fact,100
+formal_506,representationVerifier,controller_processes_personal_data,,pythen,scenario_266,,fact,100
+formal_507,representationVerifier,provide_commonly_used_format,,pythen,scenario_266,,fact,100
+formal_508,representationVerifier,request_direct_controller_to_controller,,pythen,scenario_266,,fact,100
+formal_509,representationVerifier,request_to_send_to_new_controller,,pythen,scenario_266,,fact,100
+formal_510,representationVerifier,no_undue_delay_or_obstruction,,pythen,scenario_266,,fact,100
+formal_511,representationVerifier,"{'p': 'art20_data_portability', 'op': 'ALL', 'conditions': ['ds_requests_portability', 'controller_has_ds_personal_data'], 'exceptions': ['request_is_manifestly_unfounded']}",,pythen,scenario_266,,rule,100
+formal_512,representationVerifier,"{'p': 'ds_requests_portability', 'op': 'ANY', 'conditions': ['ds_requests_receive_copy', 'ds_requests_transmit_to_controller'], 'exceptions': []}",,pythen,scenario_266,,rule,100
+formal_513,representationVerifier,"{'p': 'ds_requests_receive_copy', 'op': 'ALL', 'conditions': ['request_from_data_subject', 'request_for_personal_data_copy'], 'exceptions': []}",,pythen,scenario_266,,rule,100
+formal_514,representationVerifier,"{'p': 'ds_requests_transmit_to_controller', 'op': 'ALL', 'conditions': ['request_from_data_subject', 'request_to_send_to_new_controller'], 'exceptions': []}",,pythen,scenario_266,,rule,100
+formal_515,representationVerifier,"{'p': 'controller_has_ds_personal_data', 'op': 'ALL', 'conditions': ['controller_processes_personal_data', 'data_relates_to_requesting_subject'], 'exceptions': ['controller_cannot_identify_data_subject']}",,pythen,scenario_266,,rule,100
+formal_516,representationVerifier,"{'p': 'receive_data_in_portable_format', 'op': 'ALL', 'conditions': ['ds_requests_receive_copy', 'provide_structured_format', 'provide_commonly_used_format', 'provide_machine_readable_format'], 'exceptions': ['disclosure_adversely_affects_others']}",,pythen,scenario_266,,rule,100
+formal_517,representationVerifier,"{'p': 'transmit_data_without_hindrance', 'op': 'ALL', 'conditions': ['ds_requests_transmit_to_controller', 'no_undue_delay_or_obstruction'], 'exceptions': ['request_is_manifestly_unfounded']}",,pythen,scenario_266,,rule,100
+formal_518,representationVerifier,"{'p': 'direct_transmission_when_feasible', 'op': 'ALL', 'conditions': ['ds_requests_direct_transmission', 'direct_transfer_technically_feasible'], 'exceptions': ['no_secure_transfer_channel']}",,pythen,scenario_266,,rule,100
+formal_519,representationVerifier,"{'p': 'ds_requests_direct_transmission', 'op': 'ALL', 'conditions': ['request_from_data_subject', 'request_direct_controller_to_controller'], 'exceptions': []}",,pythen,scenario_266,,rule,100
+formal_520,representationVerifier,False,,pythen,scenario_266,,result,100
+formal_521,representationVerifier,ds_requests_direct_controller_transfer,,pythen,scenario_267,,fact,100
+formal_522,representationVerifier,output_is_structured,,pythen,scenario_267,,fact,100
+formal_523,representationVerifier,requested_data_is_personal_data,,pythen,scenario_267,,fact,100
+formal_524,representationVerifier,recipient_controller_provided,,pythen,scenario_267,,fact,100
+formal_525,representationVerifier,controller_does_not_hinder_transmission,,pythen,scenario_267,,fact,100
+formal_526,representationVerifier,controller_processes_subject_data,,pythen,scenario_267,,fact,100
+formal_527,representationVerifier,output_is_machine_readable,,pythen,scenario_267,,fact,100
+formal_528,representationVerifier,output_is_commonly_used,,pythen,scenario_267,,fact,100
+formal_529,representationVerifier,ds_submitted_request,,pythen,scenario_267,,fact,100
+formal_530,representationVerifier,direct_transfer_is_technically_feasible,,pythen,scenario_267,,fact,100
+formal_531,representationVerifier,"{'p': 'gdpr_art20_data_portability', 'op': 'ALL', 'conditions': ['data_subject_requests_portability', 'controller_has_personal_data'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_532,representationVerifier,"{'p': 'data_subject_requests_portability', 'op': 'ANY', 'conditions': ['request_receive_data_copy', 'request_transmit_to_controller'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_533,representationVerifier,"{'p': 'request_receive_data_copy', 'op': 'ALL', 'conditions': ['data_subject_request_made', 'request_scope_is_personal_data'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_534,representationVerifier,"{'p': 'request_transmit_to_controller', 'op': 'ALL', 'conditions': ['data_subject_request_made', 'target_controller_identified'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_535,representationVerifier,"{'p': 'controller_has_personal_data', 'op': 'ALL', 'conditions': ['personal_data_concerning_subject_exists'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_536,representationVerifier,"{'p': 'provide_data_in_portable_format', 'op': 'ALL', 'conditions': ['request_receive_data_copy', 'format_structured', 'format_common', 'format_machine_readable'], 'exceptions': ['controller_hindered_transmission']}",,pythen,scenario_267,,rule,100
+formal_537,representationVerifier,"{'p': 'transmit_to_another_controller', 'op': 'ALL', 'conditions': ['request_transmit_to_controller', 'no_hindrance_to_transmit'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_538,representationVerifier,"{'p': 'direct_transmission_when_feasible', 'op': 'ALL', 'conditions': ['request_transmit_to_controller', 'direct_transmission_requested', 'technically_feasible'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_539,representationVerifier,"{'p': 'data_subject_request_made', 'op': 'ALL', 'conditions': ['ds_submitted_request'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_540,representationVerifier,"{'p': 'request_scope_is_personal_data', 'op': 'ALL', 'conditions': ['requested_data_is_personal_data'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_541,representationVerifier,"{'p': 'target_controller_identified', 'op': 'ALL', 'conditions': ['recipient_controller_provided'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_542,representationVerifier,"{'p': 'personal_data_concerning_subject_exists', 'op': 'ALL', 'conditions': ['controller_processes_subject_data'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_543,representationVerifier,"{'p': 'format_structured', 'op': 'ALL', 'conditions': ['output_is_structured'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_544,representationVerifier,"{'p': 'format_common', 'op': 'ALL', 'conditions': ['output_is_commonly_used'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_545,representationVerifier,"{'p': 'format_machine_readable', 'op': 'ALL', 'conditions': ['output_is_machine_readable'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_546,representationVerifier,"{'p': 'no_hindrance_to_transmit', 'op': 'ALL', 'conditions': ['controller_does_not_hinder_transmission'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_547,representationVerifier,"{'p': 'direct_transmission_requested', 'op': 'ALL', 'conditions': ['ds_requests_direct_controller_transfer'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_548,representationVerifier,"{'p': 'technically_feasible', 'op': 'ALL', 'conditions': ['direct_transfer_is_technically_feasible'], 'exceptions': []}",,pythen,scenario_267,,rule,100
+formal_549,representationVerifier,False,,pythen,scenario_267,,result,100
+formal_550,representationVerifier,provide_structured_format,,pythen,scenario_277,,fact,100
+formal_551,representationVerifier,processing_carried_out_by_automated_means,,pythen,scenario_277,,fact,100
+formal_552,representationVerifier,provide_machine_readable_format,,pythen,scenario_277,,fact,100
+formal_553,representationVerifier,request_receive_data_copy,,pythen,scenario_277,,fact,100
+formal_554,representationVerifier,data_relates_to_identified_subject,,pythen,scenario_277,,fact,100
+formal_555,representationVerifier,data_provided_by_subject,,pythen,scenario_277,,fact,100
+formal_556,representationVerifier,provide_commonly_used_format,,pythen,scenario_277,,fact,100
+formal_557,representationVerifier,request_transmit_to_other_controller,,pythen,scenario_277,,fact,100
+formal_558,representationVerifier,request_direct_transfer,,pythen,scenario_277,,fact,100
+formal_559,representationVerifier,processing_basis_is_contract,,pythen,scenario_277,,fact,100
+formal_560,representationVerifier,"{'p': 'gdpr_art20_data_portability', 'op': 'ALL', 'conditions': ['data_subject_requests_portability', 'data_is_personal_data_of_subject', 'processing_based_on_consent_or_contract', 'processing_is_automated'], 'exceptions': ['adversely_affects_others_rights_freedoms']}",,pythen,scenario_277,,rule,100
+formal_561,representationVerifier,"{'p': 'data_subject_requests_portability', 'op': 'ANY', 'conditions': ['request_receive_data_copy', 'request_transmit_to_other_controller', 'request_direct_transfer'], 'exceptions': []}",,pythen,scenario_277,,rule,100
+formal_562,representationVerifier,"{'p': 'data_is_personal_data_of_subject', 'op': 'ALL', 'conditions': ['data_relates_to_identified_subject', 'data_provided_by_subject'], 'exceptions': []}",,pythen,scenario_277,,rule,100
+formal_563,representationVerifier,"{'p': 'processing_based_on_consent_or_contract', 'op': 'ANY', 'conditions': ['processing_basis_is_consent', 'processing_basis_is_contract'], 'exceptions': []}",,pythen,scenario_277,,rule,100
+formal_564,representationVerifier,"{'p': 'processing_is_automated', 'op': 'ALL', 'conditions': ['processing_carried_out_by_automated_means'], 'exceptions': []}",,pythen,scenario_277,,rule,100
+formal_565,representationVerifier,"{'p': 'provide_data_in_portable_format', 'op': 'ALL', 'conditions': ['provide_structured_format', 'provide_commonly_used_format', 'provide_machine_readable_format'], 'exceptions': []}",,pythen,scenario_277,,rule,100
+formal_566,representationVerifier,"{'p': 'enable_transmission_without_hindrance', 'op': 'ALL', 'conditions': ['no_unjustified_delay', 'no_unreasonable_fees', 'no_technical_barriers_imposed'], 'exceptions': []}",,pythen,scenario_277,,rule,100
+formal_567,representationVerifier,"{'p': 'direct_transfer_if_feasible', 'op': 'ALL', 'conditions': ['request_direct_transfer', 'direct_transfer_technically_feasible'], 'exceptions': []}",,pythen,scenario_277,,rule,100
+formal_568,representationVerifier,False,,pythen,scenario_277,,result,100
+formal_569,representationVerifier,direct_transfer_technically_feasible,,pythen,scenario_278,,fact,100
+formal_570,representationVerifier,data_available_for_export,,pythen,scenario_278,,fact,100
+formal_571,representationVerifier,subject_identified_or_authenticated,,pythen,scenario_278,,fact,100
+formal_572,representationVerifier,data_relates_to_requesting_subject,,pythen,scenario_278,,fact,100
+formal_573,representationVerifier,controller_processes_personal_data,,pythen,scenario_278,,fact,100
+formal_574,representationVerifier,subject_requests_data_copy,,pythen,scenario_278,,fact,100
+formal_575,representationVerifier,subject_requests_direct_transfer,,pythen,scenario_278,,fact,100
+formal_576,representationVerifier,target_controller_specified_by_subject,,pythen,scenario_278,,fact,100
+formal_577,representationVerifier,format_structured_common_machine_readable,,pythen,scenario_278,,fact,100
+formal_578,representationVerifier,"{'p': 'gdpr_a20_data_portability', 'op': 'ALL', 'conditions': ['data_subject_requests_portability', 'controller_holds_subject_personal_data'], 'exceptions': ['request_is_manifestly_unfounded', 'request_is_excessive']}",,pythen,scenario_278,,rule,100
+formal_579,representationVerifier,"{'p': 'data_subject_requests_portability', 'op': 'ANY', 'conditions': ['request_receive_machine_readable_copy', 'request_transmit_to_another_controller'], 'exceptions': []}",,pythen,scenario_278,,rule,100
+formal_580,representationVerifier,"{'p': 'request_receive_machine_readable_copy', 'op': 'ALL', 'conditions': ['subject_requests_data_copy', 'format_structured_common_machine_readable'], 'exceptions': []}",,pythen,scenario_278,,rule,100
+formal_581,representationVerifier,"{'p': 'request_transmit_to_another_controller', 'op': 'ANY', 'conditions': ['subject_requests_transmission_no_hindrance', 'subject_requests_direct_controller_to_controller'], 'exceptions': []}",,pythen,scenario_278,,rule,100
+formal_582,representationVerifier,"{'p': 'subject_requests_transmission_no_hindrance', 'op': 'ALL', 'conditions': ['subject_identified_or_authenticated', 'target_controller_specified_by_subject'], 'exceptions': ['transmission_would_hinder_others_rights']}",,pythen,scenario_278,,rule,100
+formal_583,representationVerifier,"{'p': 'subject_requests_direct_controller_to_controller', 'op': 'ALL', 'conditions': ['subject_requests_direct_transfer', 'direct_transfer_technically_feasible', 'target_controller_specified_by_subject'], 'exceptions': ['direct_transfer_not_technically_feasible', 'transmission_would_hinder_others_rights']}",,pythen,scenario_278,,rule,100
+formal_584,representationVerifier,"{'p': 'controller_holds_subject_personal_data', 'op': 'ALL', 'conditions': ['controller_processes_personal_data', 'data_relates_to_requesting_subject', 'data_available_for_export'], 'exceptions': ['data_not_concerning_subject']}",,pythen,scenario_278,,rule,100
+formal_585,representationVerifier,False,,pythen,scenario_278,,result,100
+formal_586,representationVerifier,data_subject_requests_transmission,,pythen,scenario_279,,fact,100
+formal_587,representationVerifier,personal_data_processed,,pythen,scenario_279,,fact,100
+formal_588,representationVerifier,data_subject_identified,,pythen,scenario_279,,fact,100
+formal_589,representationVerifier,portability_request_received,,pythen,scenario_279,,fact,100
+formal_590,representationVerifier,legal_basis_is_contract,,pythen,scenario_279,,fact,100
+formal_591,representationVerifier,data_concerns_data_subject,,pythen,scenario_279,,fact,100
+formal_592,representationVerifier,processing_by_automated_means,,pythen,scenario_279,,fact,100
+formal_593,representationVerifier,legal_basis_is_consent,,pythen,scenario_279,,fact,100
+formal_594,representationVerifier,"{'p': 'art20_data_portability', 'op': 'ALL', 'conditions': ['request_from_data_subject', 'processing_based_on_consent_or_contract', 'processing_is_automated'], 'exceptions': []}",,pythen,scenario_279,,rule,100
+formal_595,representationVerifier,"{'p': 'request_from_data_subject', 'op': 'ALL', 'conditions': ['data_subject_identified', 'portability_request_received'], 'exceptions': []}",,pythen,scenario_279,,rule,100
+formal_596,representationVerifier,"{'p': 'processing_based_on_consent_or_contract', 'op': 'ANY', 'conditions': ['legal_basis_is_consent', 'legal_basis_is_contract'], 'exceptions': []}",,pythen,scenario_279,,rule,100
+formal_597,representationVerifier,"{'p': 'processing_is_automated', 'op': 'ALL', 'conditions': ['personal_data_processed', 'processing_by_automated_means'], 'exceptions': []}",,pythen,scenario_279,,rule,100
+formal_598,representationVerifier,"{'p': 'provide_data_copy_structured', 'op': 'ALL', 'conditions': ['art20_data_portability', 'data_concerns_data_subject', 'data_is_provided_in_structured_format', 'data_is_commonly_used_format', 'data_is_machine_readable_format'], 'exceptions': ['adversely_affects_rights_of_others']}",,pythen,scenario_279,,rule,100
+formal_599,representationVerifier,"{'p': 'allow_transmit_to_another_controller', 'op': 'ALL', 'conditions': ['art20_data_portability', 'data_subject_requests_transmission', 'transmission_without_hindrance'], 'exceptions': ['adversely_affects_rights_of_others']}",,pythen,scenario_279,,rule,100
+formal_600,representationVerifier,"{'p': 'direct_controller_to_controller_transfer', 'op': 'ALL', 'conditions': ['allow_transmit_to_another_controller', 'data_subject_requests_direct_transfer', 'direct_transfer_technically_feasible'], 'exceptions': ['adversely_affects_rights_of_others']}",,pythen,scenario_279,,rule,100
+formal_601,representationVerifier,False,,pythen,scenario_279,,result,100
+formal_602,representationVerifier,provide_structured_format,,pythen,scenario_280,,fact,100
+formal_603,representationVerifier,direct_transfer_technically_feasible,,pythen,scenario_280,,fact,100
+formal_604,representationVerifier,provide_machine_readable_format,,pythen,scenario_280,,fact,100
+formal_605,representationVerifier,legal_basis_consent_or_contract,,pythen,scenario_280,,fact,100
+formal_606,representationVerifier,processing_is_automated,,pythen,scenario_280,,fact,100
+formal_607,representationVerifier,provide_commonly_used_format,,pythen,scenario_280,,fact,100
+formal_608,representationVerifier,subject_requests_direct_transfer,,pythen,scenario_280,,fact,100
+formal_609,representationVerifier,no_hindrance_to_transmit,,pythen,scenario_280,,fact,100
+formal_610,representationVerifier,allow_transmit_to_another_controller,,pythen,scenario_280,,fact,100
+formal_611,representationVerifier,personal_data_concerning_subject,,pythen,scenario_280,,fact,100
+formal_612,representationVerifier,"{'p': 'gdpr_art20_data_portability', 'op': 'ALL', 'conditions': ['art20_applicability', 'art20_rights_granted'], 'exceptions': ['request_manifestly_unfounded', 'request_excessive']}",,pythen,scenario_280,,rule,100
+formal_613,representationVerifier,"{'p': 'art20_applicability', 'op': 'ALL', 'conditions': ['personal_data_concerning_subject', 'processing_is_automated', 'legal_basis_consent_or_contract'], 'exceptions': ['processing_not_automated', 'legal_basis_not_consent_or_contract']}",,pythen,scenario_280,,rule,100
+formal_614,representationVerifier,"{'p': 'art20_rights_granted', 'op': 'ALL', 'conditions': ['right_receive_data', 'right_transmit_data'], 'exceptions': ['controller_hinders_transmission']}",,pythen,scenario_280,,rule,100
+formal_615,representationVerifier,"{'p': 'right_receive_data', 'op': 'ALL', 'conditions': ['provide_structured_format', 'provide_commonly_used_format', 'provide_machine_readable_format'], 'exceptions': ['cannot_identify_data_subject']}",,pythen,scenario_280,,rule,100
+formal_616,representationVerifier,"{'p': 'right_transmit_data', 'op': 'ALL', 'conditions': ['allow_transmit_to_another_controller', 'no_hindrance_to_transmit'], 'exceptions': ['transmission_hindered']}",,pythen,scenario_280,,rule,100
+formal_617,representationVerifier,"{'p': 'direct_transmission_duty', 'op': 'ALL', 'conditions': ['subject_requests_direct_transfer', 'direct_transfer_technically_feasible'], 'exceptions': ['direct_transfer_not_feasible']}",,pythen,scenario_280,,rule,100
+formal_618,representationVerifier,False,,pythen,scenario_280,,result,100
+formal_619,representationVerifier,necessary_for_contract_performance,,pythen,scenario_299,,fact,100
+formal_620,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_299,,fact,100
+formal_621,representationVerifier,"{'p': 'processing_lawful_art6', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_299,,rule,100
+formal_622,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_299,,rule,100
+formal_623,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_299,,rule,100
+formal_624,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_299,,rule,100
+formal_625,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_299,,rule,100
+formal_626,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_299,,rule,100
+formal_627,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['necessary_for_legitimate_interests'], 'exceptions': ['data_subject_rights_override_interests']}",,pythen,scenario_299,,rule,100
+formal_628,representationVerifier,False,,pythen,scenario_299,,result,100
+formal_629,representationVerifier,controller_has_legitimate_interests,,pythen,scenario_305,,fact,100
+formal_630,representationVerifier,processing_needed_for_legitimate_interests,,pythen,scenario_305,,fact,100
+formal_631,representationVerifier,processing_needed_for_contract,,pythen,scenario_305,,fact,100
+formal_632,representationVerifier,processing_needed_for_legal_obligation,,pythen,scenario_305,,fact,100
+formal_633,representationVerifier,"{'p': 'gdpr_art6_lawful_processing', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_305,,rule,100
+formal_634,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_305,,rule,100
+formal_635,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['processing_needed_for_contract'], 'exceptions': []}",,pythen,scenario_305,,rule,100
+formal_636,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['processing_needed_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_305,,rule,100
+formal_637,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['processing_needed_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_305,,rule,100
+formal_638,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['processing_needed_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_305,,rule,100
+formal_639,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['controller_has_legitimate_interests', 'processing_needed_for_legitimate_interests'], 'exceptions': ['data_subject_rights_override_interests']}",,pythen,scenario_305,,rule,100
+formal_640,representationVerifier,False,,pythen,scenario_305,,result,100
+formal_641,representationVerifier,rights_not_overriding_legit_interests,,pythen,scenario_306,,fact,100
+formal_642,representationVerifier,necessary_for_contract_performance,,pythen,scenario_306,,fact,100
+formal_643,representationVerifier,necessary_for_legitimate_interests,,pythen,scenario_306,,fact,100
+formal_644,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_306,,fact,100
+formal_645,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_306,,rule,100
+formal_646,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_306,,rule,100
+formal_647,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_306,,rule,100
+formal_648,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_306,,rule,100
+formal_649,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_306,,rule,100
+formal_650,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_306,,rule,100
+formal_651,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['necessary_for_legitimate_interests', 'rights_not_overriding_legit_interests'], 'exceptions': []}",,pythen,scenario_306,,rule,100
+formal_652,representationVerifier,False,,pythen,scenario_306,,result,100
+formal_653,representationVerifier,necessary_for_contract_performance,,pythen,scenario_317,,fact,100
+formal_654,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_317,,fact,100
+formal_655,representationVerifier,necessary_for_legitimate_interests,,pythen,scenario_317,,fact,100
+formal_656,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['consent_basis', 'contract_basis', 'legal_obligation_basis', 'vital_interests_basis', 'public_task_basis', 'legitimate_interests_basis'], 'exceptions': []}",,pythen,scenario_317,,rule,100
+formal_657,representationVerifier,"{'p': 'consent_basis', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_317,,rule,100
+formal_658,representationVerifier,"{'p': 'contract_basis', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_317,,rule,100
+formal_659,representationVerifier,"{'p': 'legal_obligation_basis', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_317,,rule,100
+formal_660,representationVerifier,"{'p': 'vital_interests_basis', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_317,,rule,100
+formal_661,representationVerifier,"{'p': 'public_task_basis', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_317,,rule,100
+formal_662,representationVerifier,"{'p': 'legitimate_interests_basis', 'op': 'ALL', 'conditions': ['necessary_for_legitimate_interests'], 'exceptions': ['data_subject_rights_override_interests']}",,pythen,scenario_317,,rule,100
+formal_663,representationVerifier,False,,pythen,scenario_317,,result,100
+formal_664,representationVerifier,data_subject_consent_given,,pythen,scenario_318,,fact,100
+formal_665,representationVerifier,necessary_for_contract_performance,,pythen,scenario_318,,fact,100
+formal_666,representationVerifier,necessary_for_legitimate_interests,,pythen,scenario_318,,fact,100
+formal_667,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_318,,fact,100
+formal_668,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_318,,rule,100
+formal_669,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['data_subject_consent_given'], 'exceptions': []}",,pythen,scenario_318,,rule,100
+formal_670,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_318,,rule,100
+formal_671,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_318,,rule,100
+formal_672,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_318,,rule,100
+formal_673,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_318,,rule,100
+formal_674,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['necessary_for_legitimate_interests'], 'exceptions': ['data_subject_rights_override_interests']}",,pythen,scenario_318,,rule,100
+formal_675,representationVerifier,False,,pythen,scenario_318,,result,100
+formal_676,representationVerifier,processing_needed_for_legitimate_interest,,pythen,scenario_320,,fact,100
+formal_677,representationVerifier,processing_needed_for_obligation,,pythen,scenario_320,,fact,100
+formal_678,representationVerifier,processing_needed_for_contract,,pythen,scenario_320,,fact,100
+formal_679,representationVerifier,controller_has_legal_obligation,,pythen,scenario_320,,fact,100
+formal_680,representationVerifier,contract_with_data_subject_exists,,pythen,scenario_320,,fact,100
+formal_681,representationVerifier,controller_or_third_party_interest,,pythen,scenario_320,,fact,100
+formal_682,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['consent_given', 'necessary_for_contract', 'necessary_for_legal_obligation', 'necessary_for_vital_interests', 'necessary_for_public_task', 'legitimate_interests_apply'], 'exceptions': []}",,pythen,scenario_320,,rule,100
+formal_683,representationVerifier,"{'p': 'consent_given', 'op': 'ALL', 'conditions': ['data_subject_consent_obtained'], 'exceptions': []}",,pythen,scenario_320,,rule,100
+formal_684,representationVerifier,"{'p': 'necessary_for_contract', 'op': 'ALL', 'conditions': ['contract_with_data_subject_exists', 'processing_needed_for_contract'], 'exceptions': []}",,pythen,scenario_320,,rule,100
+formal_685,representationVerifier,"{'p': 'necessary_for_legal_obligation', 'op': 'ALL', 'conditions': ['controller_has_legal_obligation', 'processing_needed_for_obligation'], 'exceptions': []}",,pythen,scenario_320,,rule,100
+formal_686,representationVerifier,"{'p': 'necessary_for_vital_interests', 'op': 'ALL', 'conditions': ['vital_interests_at_risk', 'processing_needed_to_protect_vitals'], 'exceptions': []}",,pythen,scenario_320,,rule,100
+formal_687,representationVerifier,"{'p': 'necessary_for_public_task', 'op': 'ALL', 'conditions': ['public_interest_task_or_authority', 'processing_needed_for_public_task'], 'exceptions': []}",,pythen,scenario_320,,rule,100
+formal_688,representationVerifier,"{'p': 'legitimate_interests_apply', 'op': 'ALL', 'conditions': ['controller_or_third_party_interest', 'processing_needed_for_legitimate_interest'], 'exceptions': ['data_subject_rights_override_interest']}",,pythen,scenario_320,,rule,100
+formal_689,representationVerifier,False,,pythen,scenario_320,,result,100
+formal_690,representationVerifier,necessary_for_contract_performance,,pythen,scenario_321,,fact,100
+formal_691,representationVerifier,necessary_for_legitimate_interests,,pythen,scenario_321,,fact,100
+formal_692,representationVerifier,necessary_for_legal_obligation,,pythen,scenario_321,,fact,100
+formal_693,representationVerifier,"{'p': 'art6_lawful_processing', 'op': 'ANY', 'conditions': ['art6a_consent', 'art6b_contract', 'art6c_legal_obligation', 'art6d_vital_interests', 'art6e_public_task', 'art6f_legitimate_interests'], 'exceptions': []}",,pythen,scenario_321,,rule,100
+formal_694,representationVerifier,"{'p': 'art6a_consent', 'op': 'ALL', 'conditions': ['consent_given_by_data_subject'], 'exceptions': []}",,pythen,scenario_321,,rule,100
+formal_695,representationVerifier,"{'p': 'art6b_contract', 'op': 'ALL', 'conditions': ['necessary_for_contract_performance'], 'exceptions': []}",,pythen,scenario_321,,rule,100
+formal_696,representationVerifier,"{'p': 'art6c_legal_obligation', 'op': 'ALL', 'conditions': ['necessary_for_legal_obligation'], 'exceptions': []}",,pythen,scenario_321,,rule,100
+formal_697,representationVerifier,"{'p': 'art6d_vital_interests', 'op': 'ALL', 'conditions': ['necessary_to_protect_vital_interests'], 'exceptions': []}",,pythen,scenario_321,,rule,100
+formal_698,representationVerifier,"{'p': 'art6e_public_task', 'op': 'ALL', 'conditions': ['necessary_for_public_task_or_authority'], 'exceptions': []}",,pythen,scenario_321,,rule,100
+formal_699,representationVerifier,"{'p': 'art6f_legitimate_interests', 'op': 'ALL', 'conditions': ['necessary_for_legitimate_interests'], 'exceptions': ['overridden_by_data_subject_rights']}",,pythen,scenario_321,,rule,100
+formal_700,representationVerifier,False,,pythen,scenario_321,,result,100
+formal_701,representationVerifier,no_explicit_consent,,pythen,scenario_323,,fact,100
+formal_702,representationVerifier,no_manifestly_public,,pythen,scenario_323,,fact,100
+formal_703,representationVerifier,no_vital_interests,,pythen,scenario_323,,fact,100
+formal_704,representationVerifier,no_medicine_exception,,pythen,scenario_323,,fact,100
+formal_705,representationVerifier,no_public_health_exception,,pythen,scenario_323,,fact,100
+formal_706,representationVerifier,no_nonprofit_members_exception,,pythen,scenario_323,,fact,100
+formal_707,representationVerifier,data_is_health_data,,pythen,scenario_323,,fact,100
+formal_708,representationVerifier,no_employment_social_security_law,,pythen,scenario_323,,fact,100
+formal_709,representationVerifier,no_research_statistics_exception,,pythen,scenario_323,,fact,100
+formal_710,representationVerifier,no_legal_claims,,pythen,scenario_323,,fact,100
+formal_711,representationVerifier,no_substantial_public_interest,,pythen,scenario_323,,fact,100
+formal_712,representationVerifier,"{'p': 'art9_processing_allowed', 'op': 'ALL', 'conditions': ['is_special_category_data', 'art9_exception_applies'], 'exceptions': ['no_art9_exception_applies']}",,pythen,scenario_323,,rule,100
+formal_713,representationVerifier,"{'p': 'is_special_category_data', 'op': 'ANY', 'conditions': ['data_is_racial_or_ethnic_origin', 'data_is_political_opinions', 'data_is_religious_or_philosophical', 'data_is_trade_union_membership', 'data_is_genetic_data', 'data_is_biometric_unique_id', 'data_is_health_data', 'data_is_sex_life_or_orientation'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_714,representationVerifier,"{'p': 'art9_exception_applies', 'op': 'ANY', 'conditions': ['explicit_consent_obtained', 'employment_or_social_security_law', 'protect_vital_interests', 'nonprofit_legit_activities_members', 'data_manifestly_made_public', 'legal_claims_or_courts', 'substantial_public_interest_law', 'occupational_or_preventive_medicine', 'public_health_interest_law', 'archiving_research_statistics_safeguards'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_715,representationVerifier,"{'p': 'no_art9_exception_applies', 'op': 'ALL', 'conditions': ['is_special_category_data', 'no_exception_true'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_716,representationVerifier,"{'p': 'no_exception_true', 'op': 'ALL', 'conditions': ['no_explicit_consent', 'no_employment_social_security_law', 'no_vital_interests', 'no_nonprofit_members_exception', 'no_manifestly_public', 'no_legal_claims', 'no_substantial_public_interest', 'no_medicine_exception', 'no_public_health_exception', 'no_research_statistics_exception'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_717,representationVerifier,"{'p': 'explicit_consent_obtained', 'op': 'ALL', 'conditions': ['consent_is_explicit', 'consent_is_informed'], 'exceptions': ['consent_withdrawn']}",,pythen,scenario_323,,rule,100
+formal_718,representationVerifier,"{'p': 'employment_or_social_security_law', 'op': 'ALL', 'conditions': ['required_by_employment_law', 'appropriate_safeguards_in_place'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_719,representationVerifier,"{'p': 'protect_vital_interests', 'op': 'ALL', 'conditions': ['vital_interests_at_stake', 'data_subject_incapable_consent'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_720,representationVerifier,"{'p': 'nonprofit_legit_activities_members', 'op': 'ALL', 'conditions': ['controller_is_nonprofit_body', 'processing_for_legit_activities', 'relates_to_members_or_contacts', 'data_not_disclosed_outside'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_721,representationVerifier,"{'p': 'data_manifestly_made_public', 'op': 'ALL', 'conditions': ['made_public_by_data_subject'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_722,representationVerifier,"{'p': 'legal_claims_or_courts', 'op': 'ANY', 'conditions': ['necessary_for_legal_claims', 'necessary_for_court_functions'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_723,representationVerifier,"{'p': 'substantial_public_interest_law', 'op': 'ALL', 'conditions': ['authorized_by_union_or_member_law', 'substantial_public_interest', 'proportionate_measures_in_place'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_724,representationVerifier,"{'p': 'occupational_or_preventive_medicine', 'op': 'ALL', 'conditions': ['medical_purpose_applies', 'under_health_professional_secrecy'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_725,representationVerifier,"{'p': 'public_health_interest_law', 'op': 'ALL', 'conditions': ['public_health_purpose', 'authorized_by_union_or_member_law', 'suitable_measures_in_place'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_726,representationVerifier,"{'p': 'archiving_research_statistics_safeguards', 'op': 'ALL', 'conditions': ['archiving_research_or_statistics', 'article89_safeguards_applied', 'proportionate_measures_in_place'], 'exceptions': []}",,pythen,scenario_323,,rule,100
+formal_727,representationVerifier,False,,pythen,scenario_323,,result,100
+formal_728,representationVerifier,withdrawal_as_easy_as_consent,,pythen,scenario_352,,fact,100
+formal_729,representationVerifier,clear_affirmative_action,,pythen,scenario_352,,fact,100
+formal_730,representationVerifier,consent_informed,,pythen,scenario_352,,fact,100
+formal_731,representationVerifier,controller_has_consent_record,,pythen,scenario_352,,fact,100
+formal_732,representationVerifier,consent_specific,,pythen,scenario_352,,fact,100
+formal_733,representationVerifier,consent_unambiguous,,pythen,scenario_352,,fact,100
+formal_734,representationVerifier,"{'p': 'gdpr_art7_valid_consent', 'op': 'ALL', 'conditions': ['freely_given', 'specific', 'informed', 'unambiguous', 'affirmative_action_opt_in', 'withdraw_as_easy_as_give', 'controller_can_demonstrate_consent'], 'exceptions': ['silence_or_inactivity_used', 'pre_ticked_boxes_used']}",,pythen,scenario_352,,rule,100
+formal_735,representationVerifier,"{'p': 'freely_given', 'op': 'ALL', 'conditions': ['consent_freely_given'], 'exceptions': []}",,pythen,scenario_352,,rule,100
+formal_736,representationVerifier,"{'p': 'specific', 'op': 'ALL', 'conditions': ['consent_specific'], 'exceptions': []}",,pythen,scenario_352,,rule,100
+formal_737,representationVerifier,"{'p': 'informed', 'op': 'ALL', 'conditions': ['consent_informed'], 'exceptions': []}",,pythen,scenario_352,,rule,100
+formal_738,representationVerifier,"{'p': 'unambiguous', 'op': 'ALL', 'conditions': ['consent_unambiguous'], 'exceptions': []}",,pythen,scenario_352,,rule,100
+formal_739,representationVerifier,"{'p': 'affirmative_action_opt_in', 'op': 'ALL', 'conditions': ['clear_affirmative_action'], 'exceptions': ['silence_or_inactivity_used', 'pre_ticked_boxes_used']}",,pythen,scenario_352,,rule,100
+formal_740,representationVerifier,"{'p': 'withdraw_as_easy_as_give', 'op': 'ALL', 'conditions': ['withdrawal_as_easy_as_consent'], 'exceptions': []}",,pythen,scenario_352,,rule,100
+formal_741,representationVerifier,"{'p': 'controller_can_demonstrate_consent', 'op': 'ALL', 'conditions': ['controller_has_consent_record'], 'exceptions': []}",,pythen,scenario_352,,rule,100
+formal_742,representationVerifier,False,,pythen,scenario_352,,result,100
+formal_743,representationVerifier,data_subject_contests_accuracy,,pythen,scenario_362,,fact,100
+formal_744,representationVerifier,processing_under_accuracy_verification,,pythen,scenario_362,,fact,100
+formal_745,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['accuracy_contested_case', 'unlawful_processing_oppose_erasure_case', 'no_longer_needed_legal_claims_case', 'objection_pending_legitimate_interest_case'], 'exceptions': []}",,pythen,scenario_362,,rule,100
+formal_746,representationVerifier,"{'p': 'accuracy_contested_case', 'op': 'ALL', 'conditions': ['data_subject_contests_accuracy', 'processing_under_accuracy_verification'], 'exceptions': []}",,pythen,scenario_362,,rule,100
+formal_747,representationVerifier,"{'p': 'unlawful_processing_oppose_erasure_case', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'data_subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_362,,rule,100
+formal_748,representationVerifier,"{'p': 'no_longer_needed_legal_claims_case', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'data_subject_requires_for_legal_claims'], 'exceptions': []}",,pythen,scenario_362,,rule,100
+formal_749,representationVerifier,"{'p': 'objection_pending_legitimate_interest_case', 'op': 'ALL', 'conditions': ['data_subject_objected_to_processing', 'verification_of_overriding_interests_pending'], 'exceptions': []}",,pythen,scenario_362,,rule,100
+formal_750,representationVerifier,False,,pythen,scenario_362,,result,100
+formal_751,representationVerifier,verification_of_override_pending,,pythen,scenario_367,,fact,100
+formal_752,representationVerifier,subject_requires_for_legal_claims,,pythen,scenario_367,,fact,100
+formal_753,representationVerifier,data_accuracy_contested_by_subject,,pythen,scenario_367,,fact,100
+formal_754,representationVerifier,"{'p': 'art18_restriction_right_applies', 'op': 'ANY', 'conditions': ['accuracy_contested', 'unlawful_processing_oppose_erasure', 'controller_no_longer_needs_but_claims', 'objected_pending_legitimate_interest_check'], 'exceptions': []}",,pythen,scenario_367,,rule,100
+formal_755,representationVerifier,"{'p': 'accuracy_contested', 'op': 'ALL', 'conditions': ['data_accuracy_contested_by_subject'], 'exceptions': []}",,pythen,scenario_367,,rule,100
+formal_756,representationVerifier,"{'p': 'unlawful_processing_oppose_erasure', 'op': 'ALL', 'conditions': ['processing_is_unlawful', 'data_subject_opposes_erasure'], 'exceptions': []}",,pythen,scenario_367,,rule,100
+formal_757,representationVerifier,"{'p': 'controller_no_longer_needs_but_claims', 'op': 'ALL', 'conditions': ['controller_no_longer_needs_data', 'subject_requires_for_legal_claims'], 'exceptions': []}",,pythen,scenario_367,,rule,100
+formal_758,representationVerifier,"{'p': 'objected_pending_legitimate_interest_check', 'op': 'ALL', 'conditions': ['data_subject_objected_to_processing', 'verification_of_override_pending'], 'exceptions': []}",,pythen,scenario_367,,rule,100
+formal_759,representationVerifier,False,,pythen,scenario_367,,result,100
+formal_760,representationVerifier,transmit_without_hindrance,,pythen,scenario_383,,fact,100
+formal_761,representationVerifier,direct_transfer_technically_feasible,,pythen,scenario_383,,fact,100
+formal_762,representationVerifier,subject_asks_direct_controller_to_controller,,pythen,scenario_383,,fact,100
+formal_763,representationVerifier,subject_asks_receive_personal_data,,pythen,scenario_383,,fact,100
+formal_764,representationVerifier,provide_structured_common_machine_format,,pythen,scenario_383,,fact,100
+formal_765,representationVerifier,subject_asks_transmit_to_other_controller,,pythen,scenario_383,,fact,100
+formal_766,representationVerifier,personal_data_concerns_data_subject,,pythen,scenario_383,,fact,100
+formal_767,representationVerifier,controller_holds_or_controls_personal_data,,pythen,scenario_383,,fact,100
+formal_768,representationVerifier,"{'p': 'gdpr_art20_data_portability', 'op': 'ALL', 'conditions': ['data_subject_requests_portability', 'controller_processes_subject_personal_data'], 'exceptions': []}",,pythen,scenario_383,,rule,100
+formal_769,representationVerifier,"{'p': 'data_subject_requests_portability', 'op': 'ANY', 'conditions': ['request_receive_copy', 'request_transmit_to_other_controller', 'request_direct_transfer'], 'exceptions': []}",,pythen,scenario_383,,rule,100
+formal_770,representationVerifier,"{'p': 'controller_processes_subject_personal_data', 'op': 'ALL', 'conditions': ['personal_data_concerns_data_subject', 'controller_holds_or_controls_personal_data'], 'exceptions': []}",,pythen,scenario_383,,rule,100
+formal_771,representationVerifier,"{'p': 'request_receive_copy', 'op': 'ALL', 'conditions': ['subject_asks_receive_personal_data', 'provide_structured_common_machine_format'], 'exceptions': []}",,pythen,scenario_383,,rule,100
+formal_772,representationVerifier,"{'p': 'request_transmit_to_other_controller', 'op': 'ALL', 'conditions': ['subject_asks_transmit_to_other_controller', 'transmit_without_hindrance'], 'exceptions': []}",,pythen,scenario_383,,rule,100
+formal_773,representationVerifier,"{'p': 'request_direct_transfer', 'op': 'ALL', 'conditions': ['subject_asks_direct_controller_to_controller', 'direct_transfer_technically_feasible'], 'exceptions': ['direct_transfer_not_technically_feasible']}",,pythen,scenario_383,,rule,100
+formal_774,representationVerifier,False,,pythen,scenario_383,,result,100
+formal_775,representationVerifier,request_direct_controller_to_controller,,pythen,scenario_386,,fact,100
+formal_776,representationVerifier,request_for_structured_machine_readable,,pythen,scenario_386,,fact,100
+formal_777,representationVerifier,direct_transmission_technically_feasible,,pythen,scenario_386,,fact,100
+formal_778,representationVerifier,request_to_transmit_to_another_controller,,pythen,scenario_386,,fact,100
+formal_779,representationVerifier,controller_holds_ds_personal_data,,pythen,scenario_386,,fact,100
+formal_780,representationVerifier,"{'p': 'gdpr_a20_data_portability', 'op': 'ALL', 'conditions': ['ds_requests_portability', 'controller_holds_ds_personal_data'], 'exceptions': ['request_manifestly_unfounded_or_excessive']}",,pythen,scenario_386,,rule,100
+formal_781,representationVerifier,"{'p': 'ds_requests_portability', 'op': 'ANY', 'conditions': ['ds_requests_receive_copy', 'ds_requests_transmit_to_controller'], 'exceptions': []}",,pythen,scenario_386,,rule,100
+formal_782,representationVerifier,"{'p': 'ds_requests_receive_copy', 'op': 'ALL', 'conditions': ['request_for_structured_machine_readable'], 'exceptions': []}",,pythen,scenario_386,,rule,100
+formal_783,representationVerifier,"{'p': 'ds_requests_transmit_to_controller', 'op': 'ANY', 'conditions': ['ds_requests_transmit_without_hindrance', 'ds_requests_direct_transmission'], 'exceptions': []}",,pythen,scenario_386,,rule,100
+formal_784,representationVerifier,"{'p': 'ds_requests_transmit_without_hindrance', 'op': 'ALL', 'conditions': ['request_to_transmit_to_another_controller'], 'exceptions': []}",,pythen,scenario_386,,rule,100
+formal_785,representationVerifier,"{'p': 'ds_requests_direct_transmission', 'op': 'ALL', 'conditions': ['request_direct_controller_to_controller', 'direct_transmission_technically_feasible'], 'exceptions': []}",,pythen,scenario_386,,rule,100
+formal_786,representationVerifier,False,,pythen,scenario_386,,result,100
+formal_787,representationVerifier,provide_common_format,,pythen,scenario_387,,fact,100
+formal_788,representationVerifier,direct_transfer_technically_feasible,,pythen,scenario_387,,fact,100
+formal_789,representationVerifier,data_subject_requests_copy,,pythen,scenario_387,,fact,100
+formal_790,representationVerifier,provide_structured_format,,pythen,scenario_387,,fact,100
+formal_791,representationVerifier,no_hindrance_to_transfer,,pythen,scenario_387,,fact,100
+formal_792,representationVerifier,data_subject_requests_direct_transfer,,pythen,scenario_387,,fact,100
+formal_793,representationVerifier,data_is_personal_about_subject,,pythen,scenario_387,,fact,100
+formal_794,representationVerifier,provide_machine_readable,,pythen,scenario_387,,fact,100
+formal_795,representationVerifier,data_subject_requests_transfer,,pythen,scenario_387,,fact,100
+formal_796,representationVerifier,"{'p': 'gdpr_art20_data_portability', 'op': 'ALL', 'conditions': ['right_receive_data', 'right_transmit_data'], 'exceptions': []}",,pythen,scenario_387,,rule,100
+formal_797,representationVerifier,"{'p': 'right_receive_data', 'op': 'ALL', 'conditions': ['data_subject_requests_copy', 'data_is_personal_about_subject', 'provide_structured_format', 'provide_common_format', 'provide_machine_readable'], 'exceptions': []}",,pythen,scenario_387,,rule,100
+formal_798,representationVerifier,"{'p': 'right_transmit_data', 'op': 'ALL', 'conditions': ['data_subject_requests_transfer', 'no_hindrance_to_transfer'], 'exceptions': []}",,pythen,scenario_387,,rule,100
+formal_799,representationVerifier,"{'p': 'direct_transfer_if_feasible', 'op': 'ALL', 'conditions': ['data_subject_requests_direct_transfer', 'direct_transfer_technically_feasible'], 'exceptions': []}",,pythen,scenario_387,,rule,100
+formal_800,representationVerifier,False,,pythen,scenario_387,,result,100
+formal_801,representationVerifier,ds_requests_direct_transfer,,pythen,scenario_389,,fact,100
+formal_802,representationVerifier,request_from_data_subject,,pythen,scenario_389,,fact,100
+formal_803,representationVerifier,request_to_transmit_to_new_controller,,pythen,scenario_389,,fact,100
+formal_804,representationVerifier,request_for_machine_readable_format,,pythen,scenario_389,,fact,100
+formal_805,representationVerifier,controller_holds_personal_data,,pythen,scenario_389,,fact,100
+formal_806,representationVerifier,request_for_structured_format,,pythen,scenario_389,,fact,100
+formal_807,representationVerifier,request_for_common_format,,pythen,scenario_389,,fact,100
+formal_808,representationVerifier,data_concerns_requesting_subject,,pythen,scenario_389,,fact,100
+formal_809,representationVerifier,"{'p': 'gdpr_a20_data_portability', 'op': 'ALL', 'conditions': ['ds_requests_portable_copy', 'controller_processes_ds_personal_data'], 'exceptions': ['request_manifestly_unfounded_or_excessive']}",,pythen,scenario_389,,rule,100
+formal_810,representationVerifier,"{'p': 'ds_requests_portable_copy', 'op': 'ANY', 'conditions': ['ds_requests_receive_data', 'ds_requests_transmit_to_controller'], 'exceptions': []}",,pythen,scenario_389,,rule,100
+formal_811,representationVerifier,"{'p': 'ds_requests_receive_data', 'op': 'ALL', 'conditions': ['request_from_data_subject', 'request_for_structured_format', 'request_for_common_format', 'request_for_machine_readable_format'], 'exceptions': []}",,pythen,scenario_389,,rule,100
+formal_812,representationVerifier,"{'p': 'ds_requests_transmit_to_controller', 'op': 'ALL', 'conditions': ['request_from_data_subject', 'request_to_transmit_to_new_controller', 'transmission_without_hindrance'], 'exceptions': []}",,pythen,scenario_389,,rule,100
+formal_813,representationVerifier,"{'p': 'controller_processes_ds_personal_data', 'op': 'ALL', 'conditions': ['controller_holds_personal_data', 'data_concerns_requesting_subject'], 'exceptions': []}",,pythen,scenario_389,,rule,100
+formal_814,representationVerifier,"{'p': 'direct_transfer_if_feasible', 'op': 'ALL', 'conditions': ['ds_requests_direct_transfer', 'direct_transfer_technically_feasible'], 'exceptions': ['direct_transfer_not_technically_feasible']}",,pythen,scenario_389,,rule,100
+formal_815,representationVerifier,False,,pythen,scenario_389,,result,100

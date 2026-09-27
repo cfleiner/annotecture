@@ -1,0 +1,15 @@
+PREFIX ex:   <http://www.example.com/>
+PREFIX oa:   <http://www.w3.org/ns/oa#>
+PREFIX as:   <https://www.w3.org/ns/activitystreams#>
+
+SELECT ?content ?case
+WHERE {
+  ?fr a ex:FormalRepresentation ;
+      oa:bodyValue ?content ;
+      oa:hasTarget _:claim .
+
+  _:claim ex:case ?case .
+
+  FILTER(?case IN ($CASES
+  ))
+}

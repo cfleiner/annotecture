@@ -1,5 +1,5 @@
 import ipywidgets as widgets
-from etc import run_problog_program
+from problog_etc import run_problog_program
 
 HTML_SPINNER = """
     <div style="display:flex;align-items:center;gap:10px">

@@ -1,0 +1,7 @@
+PREFIX ex:   <http://www.example.com/>
+
+SELECT ?case
+WHERE {
+    _:claim a ex:Claim ;
+        ex:case ?case.
+}

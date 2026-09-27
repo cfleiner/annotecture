@@ -1,0 +1,13 @@
+SELECT DISTINCT ?expert
+WHERE {
+    {
+        FILTER( "$transitive" = "yes")
+        $expert foaf:knows* ?expert .
+        ?expert a ex:DomainExpert .
+    }
+    UNION
+    {
+        FILTER("$transitive" = "no")
+        BIND($expert AS ?expert)
+    }
+}

@@ -1,0 +1,11 @@
+PREFIX ex: <http://www.example.com/>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+
+SELECT ?item ?bodyValue
+WHERE {
+    $knowledge_base a ex:KnowledgeBase ;
+        as:items ?item .
+    ?item oa:bodyValue ?bodyValue .
+}
+ORDER BY ?item

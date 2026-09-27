@@ -1,6 +1,9 @@
 *./ipynb_checkpoints
 healthcare/__pycache__/
 
+manufacturing/manufacturing_transform.ipynb
+manufacturing/tuning.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

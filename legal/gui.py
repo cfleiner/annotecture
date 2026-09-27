@@ -1,7 +1,7 @@
 from functools import partial
 import ipywidgets as widgets
 
-from etc import label_for
+from pythen_etc import label_for
 
 def create_facts_tab(predicates):
     fact_buttons = []
@@ -80,9 +80,10 @@ def create_target_tab(predicates, evaluator, fact_buttons):
 
     return target_tab, target_dropdown, evaluate_button, output
 
-def create_gui(predicates, evaluator):
+def create_gui(predicates, facts, evaluator):
     facts_tab, fact_buttons  = create_facts_tab(predicates)
-    target_tab, target_dropdown, evaluate_button, output = create_target_tab(predicates, evaluator, fact_buttons) 
+    target_tab, target_dropdown, evaluate_button, output = create_target_tab(predicates, evaluator, fact_buttons)
+    
     
     tabs = widgets.Tab(children=[facts_tab, target_tab])
     tabs.set_title(0, "Facts")

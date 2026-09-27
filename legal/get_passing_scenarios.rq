@@ -1,0 +1,40 @@
+SELECT  ?scenario ?calculated_score ?scenario_score ?representation_score ?logical_pass ?legal_score # ?scenario (COUNT(*) AS ?count)
+WHERE {
+    ?scenario a ex:Claim .
+
+    ?claimAssessment oa:hasTarget ?scenario ;
+        ex:scenario_score ?scenario_score .
+
+    {
+        SELECT
+            ?scenario
+            (SAMPLE(?kb) AS ?kb)
+            (AVG(?representation_score) AS ?representation_score)
+        WHERE {
+            ?kb a ex:KnowledgeBase ;
+                as:items ?formalRepresentation .
+    
+            ?formalRepresentation
+                oa:hasTarget ?scenario ;
+                ex:representation_score ?representation_score .
+        }
+        GROUP BY ?scenario
+    }
+
+    ?formalAssessment oa:hasTarget ?kb ; 
+        ex:logical_pass ?logical_pass .
+
+    ?kbAssessment oa:hasTarget ?kb ;
+              ex:legal_score ?legal_score .
+
+    BIND(
+        xsd:decimal($FORMULA)
+        AS ?calculated_score
+    )
+
+    FILTER(?calculated_score >= xsd:decimal("$THRESHOLD"))
+
+    
+}
+GROUP BY ?scenario
+ORDER BY DESC(?calculated_score)

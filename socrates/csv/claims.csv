@@ -1,0 +1,5 @@
+claimID,owner,content,explanation,target,selectorPhrase,revision
+Claim_AllMenAreMortal,JohnStuartMill,All men are mortal.,,SystemOfLogic,All men are mortal.,
+Claim_SocratesIsAMan,JohnStuartMill,Socrates is a man.,,SystemOfLogic,Socrates is a man.,
+Claim_AllHumansAreMortal,JohnStuartMill,All humans are mortal.,To use more inclusive language without changing the meaning.,Claim_AllMenAreMortal,All men are mortal.,yes
+Claim_SocratesIsAHuman,JohnStuartMill,Socrates is a human.,To use more inclusive language without changing the meaning.,Claim_SocratesIsAMan,Socrates is a man.,yes

@@ -1,0 +1,21 @@
+PREFIX ex:   <http://www.example.com/>
+PREFIX oa:   <http://www.w3.org/ns/oa#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX as:   <https://www.w3.org/ns/activitystreams#>
+
+CONSTRUCT {
+  ex:NetworkKnowledgeBase
+      a ex:KnowledgeBase, oa:AnnotationPage ;
+      as:items ?fr .
+}
+WHERE {
+  ?fr a ex:FormalRepresentation ;
+      oa:hasTarget [
+          oa:hasSource _:claim
+        ].
+     
+  _:claim prov:wasAttributedTo ?expert . 
+
+  FILTER(?expert IN ($experts
+  ))
+}

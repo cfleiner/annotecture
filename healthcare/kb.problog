@@ -1,0 +1,326 @@
+0.1::birthasphyxia(yes).
+0.23469388::disease(paivs) :- birthasphyxia(no).
+0.75::lungflow(high) :- disease(tga).
+0.05::lungflow(high) :- disease(fallot).
+0.05::lungflow(high) :- disease(paivs).
+0.6::lungflow(high) :- disease(tapvd).
+0.2::lungflow(high) :- disease(lung).
+0.4::sick(yes) :- disease(pfc).
+0.3::sick(yes) :- disease(tga).
+0.2::sick(yes) :- disease(fallot).
+0.3::sick(yes) :- disease(paivs).
+0.7::sick(yes) :- disease(tapvd).
+0.05::disease(tapvd) :- birthasphyxia(yes).
+0.7::sick(yes) :- disease(lung).
+0.6::sick(no) :- disease(pfc).
+0.7::sick(no) :- disease(tga).
+0.8::sick(no) :- disease(fallot).
+0.7::sick(no) :- disease(paivs).
+0.3::sick(no) :- disease(tapvd).
+0.3::sick(no) :- disease(lung).
+0.9::lvhreport(yes) :- lvh(yes).
+0.05::lvhreport(yes) :- lvh(no).
+0.1::lvhreport(no) :- lvh(yes).
+0.05102041::disease(tapvd) :- birthasphyxia(no).
+0.95::lvhreport(no) :- lvh(no).
+0.95::hypdistrib(equal) :- ductflow(lt_to_rt), cardiacmixing(none).
+0.95::hypdistrib(equal) :- ductflow(lt_to_rt), cardiacmixing(mild).
+0.95::hypdistrib(equal) :- ductflow(lt_to_rt), cardiacmixing(complete).
+0.95::hypdistrib(equal) :- ductflow(lt_to_rt), cardiacmixing(transp_point).
+0.95::hypdistrib(equal) :- ductflow(none), cardiacmixing(none).
+0.95::hypdistrib(equal) :- ductflow(none), cardiacmixing(mild).
+0.95::hypdistrib(equal) :- ductflow(none), cardiacmixing(complete).
+0.95::hypdistrib(equal) :- ductflow(none), cardiacmixing(transp_point).
+0.05::hypdistrib(equal) :- ductflow(rt_to_lt), cardiacmixing(none).
+0.05::disease(lung) :- birthasphyxia(yes).
+0.5::hypdistrib(equal) :- ductflow(rt_to_lt), cardiacmixing(mild).
+0.95::hypdistrib(equal) :- ductflow(rt_to_lt), cardiacmixing(complete).
+0.5::hypdistrib(equal) :- ductflow(rt_to_lt), cardiacmixing(transp_point).
+0.05::hypdistrib(unequal) :- ductflow(lt_to_rt), cardiacmixing(none).
+0.05::hypdistrib(unequal) :- ductflow(lt_to_rt), cardiacmixing(mild).
+0.05::hypdistrib(unequal) :- ductflow(lt_to_rt), cardiacmixing(complete).
+0.05::hypdistrib(unequal) :- ductflow(lt_to_rt), cardiacmixing(transp_point).
+0.05::hypdistrib(unequal) :- ductflow(none), cardiacmixing(none).
+0.05::hypdistrib(unequal) :- ductflow(none), cardiacmixing(mild).
+0.05::hypdistrib(unequal) :- ductflow(none), cardiacmixing(complete).
+0.05102041::disease(lung) :- birthasphyxia(no).
+0.05::hypdistrib(unequal) :- ductflow(none), cardiacmixing(transp_point).
+0.95::hypdistrib(unequal) :- ductflow(rt_to_lt), cardiacmixing(none).
+0.5::hypdistrib(unequal) :- ductflow(rt_to_lt), cardiacmixing(mild).
+0.05::hypdistrib(unequal) :- ductflow(rt_to_lt), cardiacmixing(complete).
+0.5::hypdistrib(unequal) :- ductflow(rt_to_lt), cardiacmixing(transp_point).
+0.93::hypoxiainotwo(mild) :- cardiacmixing(none), lungparench(normal).
+0.15::hypoxiainotwo(mild) :- cardiacmixing(none), lungparench(congested).
+0.7::hypoxiainotwo(mild) :- cardiacmixing(none), lungparench(abnormal).
+0.1::hypoxiainotwo(mild) :- cardiacmixing(mild), lungparench(normal).
+0.1::hypoxiainotwo(mild) :- cardiacmixing(mild), lungparench(congested).
+0.1::lvh(yes) :- disease(pfc).
+0.1::hypoxiainotwo(mild) :- cardiacmixing(mild), lungparench(abnormal).
+0.1::hypoxiainotwo(mild) :- cardiacmixing(complete), lungparench(normal).
+0.05::hypoxiainotwo(mild) :- cardiacmixing(complete), lungparench(congested).
+0.1::hypoxiainotwo(mild) :- cardiacmixing(complete), lungparench(abnormal).
+0.02::hypoxiainotwo(mild) :- cardiacmixing(transp_point), lungparench(normal).
+0.1::hypoxiainotwo(mild) :- cardiacmixing(transp_point), lungparench(congested).
+0.02::hypoxiainotwo(mild) :- cardiacmixing(transp_point), lungparench(abnormal).
+0.05::hypoxiainotwo(moderate) :- cardiacmixing(none), lungparench(normal).
+0.8::hypoxiainotwo(moderate) :- cardiacmixing(none), lungparench(congested).
+0.2::hypoxiainotwo(moderate) :- cardiacmixing(none), lungparench(abnormal).
+0.1::lvh(yes) :- disease(tga).
+0.8::hypoxiainotwo(moderate) :- cardiacmixing(mild), lungparench(normal).
+0.75::hypoxiainotwo(moderate) :- cardiacmixing(mild), lungparench(congested).
+0.65::hypoxiainotwo(moderate) :- cardiacmixing(mild), lungparench(abnormal).
+0.8::cotwo(normal) :- lungparench(normal).
+0.65::cotwo(normal) :- lungparench(congested).
+0.45::cotwo(normal) :- lungparench(abnormal).
+0.1::cotwo(low) :- lungparench(normal).
+0.05::cotwo(low) :- lungparench(congested).
+0.05::cotwo(low) :- lungparench(abnormal).
+0.1::cotwo(high) :- lungparench(normal).
+0.1::lvh(yes) :- disease(fallot).
+0.3::cotwo(high) :- lungparench(congested).
+0.5::cotwo(high) :- lungparench(abnormal).
+0.9::chestxray(normal) :- lungparench(normal), lungflow(normal).
+0.14::chestxray(normal) :- lungparench(normal), lungflow(low).
+0.15::chestxray(normal) :- lungparench(normal), lungflow(high).
+0.05::chestxray(normal) :- lungparench(congested), lungflow(normal).
+0.05::chestxray(normal) :- lungparench(congested), lungflow(low).
+0.05::chestxray(normal) :- lungparench(congested), lungflow(high).
+0.05::chestxray(normal) :- lungparench(abnormal), lungflow(normal).
+0.05::chestxray(normal) :- lungparench(abnormal), lungflow(low).
+0.9::lvh(yes) :- disease(paivs).
+0.24::chestxray(normal) :- lungparench(abnormal), lungflow(high).
+0.03::chestxray(oligaemic) :- lungparench(normal), lungflow(normal).
+0.8::chestxray(oligaemic) :- lungparench(normal), lungflow(low).
+0.01::chestxray(oligaemic) :- lungparench(normal), lungflow(high).
+0.02::chestxray(oligaemic) :- lungparench(congested), lungflow(normal).
+0.22::chestxray(oligaemic) :- lungparench(congested), lungflow(low).
+0.02::chestxray(oligaemic) :- lungparench(congested), lungflow(high).
+0.05::chestxray(oligaemic) :- lungparench(abnormal), lungflow(normal).
+0.15::chestxray(oligaemic) :- lungparench(abnormal), lungflow(low).
+0.33::chestxray(oligaemic) :- lungparench(abnormal), lungflow(high).
+0.05::lvh(yes) :- disease(tapvd).
+0.03::chestxray(plethoric) :- lungparench(normal), lungflow(normal).
+0.02::chestxray(plethoric) :- lungparench(normal), lungflow(low).
+0.79::chestxray(plethoric) :- lungparench(normal), lungflow(high).
+0.15::chestxray(plethoric) :- lungparench(congested), lungflow(normal).
+0.08::chestxray(plethoric) :- lungparench(congested), lungflow(low).
+0.4::chestxray(plethoric) :- lungparench(congested), lungflow(high).
+0.05::chestxray(plethoric) :- lungparench(abnormal), lungflow(normal).
+0.05::chestxray(plethoric) :- lungparench(abnormal), lungflow(low).
+0.03::chestxray(plethoric) :- lungparench(abnormal), lungflow(high).
+0.01::chestxray(grd_glass) :- lungparench(normal), lungflow(normal).
+0.9::birthasphyxia(no).
+0.1::lvh(yes) :- disease(lung).
+0.02::chestxray(grd_glass) :- lungparench(normal), lungflow(low).
+0.04::chestxray(grd_glass) :- lungparench(normal), lungflow(high).
+0.7::chestxray(grd_glass) :- lungparench(congested), lungflow(normal).
+0.5::chestxray(grd_glass) :- lungparench(congested), lungflow(low).
+0.4::chestxray(grd_glass) :- lungparench(congested), lungflow(high).
+0.05::chestxray(grd_glass) :- lungparench(abnormal), lungflow(normal).
+0.05::chestxray(grd_glass) :- lungparench(abnormal), lungflow(low).
+0.34::chestxray(grd_glass) :- lungparench(abnormal), lungflow(high).
+0.03::chestxray(asy_patch) :- lungparench(normal), lungflow(normal).
+0.02::chestxray(asy_patch) :- lungparench(normal), lungflow(low).
+0.9::lvh(no) :- disease(pfc).
+0.01::chestxray(asy_patch) :- lungparench(normal), lungflow(high).
+0.08::chestxray(asy_patch) :- lungparench(congested), lungflow(normal).
+0.15::chestxray(asy_patch) :- lungparench(congested), lungflow(low).
+0.13::chestxray(asy_patch) :- lungparench(congested), lungflow(high).
+0.8::chestxray(asy_patch) :- lungparench(abnormal), lungflow(normal).
+0.7::chestxray(asy_patch) :- lungparench(abnormal), lungflow(low).
+0.06::chestxray(asy_patch) :- lungparench(abnormal), lungflow(high).
+0.2::grunting(yes) :- lungparench(normal), sick(yes).
+0.05::grunting(yes) :- lungparench(normal), sick(no).
+0.4::grunting(yes) :- lungparench(congested), sick(yes).
+0.9::lvh(no) :- disease(tga).
+0.2::grunting(yes) :- lungparench(congested), sick(no).
+0.8::grunting(yes) :- lungparench(abnormal), sick(yes).
+0.6::grunting(yes) :- lungparench(abnormal), sick(no).
+0.8::grunting(no) :- lungparench(normal), sick(yes).
+0.95::grunting(no) :- lungparench(normal), sick(no).
+0.6::grunting(no) :- lungparench(congested), sick(yes).
+0.8::grunting(no) :- lungparench(congested), sick(no).
+0.2::grunting(no) :- lungparench(abnormal), sick(yes).
+0.4::grunting(no) :- lungparench(abnormal), sick(no).
+0.95::age(zero_to_three_days) :- disease(pfc), sick(yes).
+0.9::lvh(no) :- disease(fallot).
+0.85::age(zero_to_three_days) :- disease(pfc), sick(no).
+0.8::age(zero_to_three_days) :- disease(tga), sick(yes).
+0.7::age(zero_to_three_days) :- disease(tga), sick(no).
+0.7::age(zero_to_three_days) :- disease(fallot), sick(yes).
+0.25::age(zero_to_three_days) :- disease(fallot), sick(no).
+0.8::age(zero_to_three_days) :- disease(paivs), sick(yes).
+0.8::age(zero_to_three_days) :- disease(paivs), sick(no).
+0.8::age(zero_to_three_days) :- disease(tapvd), sick(yes).
+0.7::age(zero_to_three_days) :- disease(tapvd), sick(no).
+0.9::age(zero_to_three_days) :- disease(lung), sick(yes).
+0.1::lvh(no) :- disease(paivs).
+0.8::age(zero_to_three_days) :- disease(lung), sick(no).
+0.03::age(four_to_ten_days) :- disease(pfc), sick(yes).
+0.1::age(four_to_ten_days) :- disease(pfc), sick(no).
+0.15::age(four_to_ten_days) :- disease(tga), sick(yes).
+0.2::age(four_to_ten_days) :- disease(tga), sick(no).
+0.15::age(four_to_ten_days) :- disease(fallot), sick(yes).
+0.25::age(four_to_ten_days) :- disease(fallot), sick(no).
+0.15::age(four_to_ten_days) :- disease(paivs), sick(yes).
+0.15::age(four_to_ten_days) :- disease(paivs), sick(no).
+0.15::age(four_to_ten_days) :- disease(tapvd), sick(yes).
+0.95::lvh(no) :- disease(tapvd).
+0.2::age(four_to_ten_days) :- disease(tapvd), sick(no).
+0.08::age(four_to_ten_days) :- disease(lung), sick(yes).
+0.15::age(four_to_ten_days) :- disease(lung), sick(no).
+0.02::age(eleven_to_thirty_days) :- disease(pfc), sick(yes).
+0.05::age(eleven_to_thirty_days) :- disease(pfc), sick(no).
+0.05::age(eleven_to_thirty_days) :- disease(tga), sick(yes).
+0.1::age(eleven_to_thirty_days) :- disease(tga), sick(no).
+0.15::age(eleven_to_thirty_days) :- disease(fallot), sick(yes).
+0.5::age(eleven_to_thirty_days) :- disease(fallot), sick(no).
+0.05::age(eleven_to_thirty_days) :- disease(paivs), sick(yes).
+0.9::lvh(no) :- disease(lung).
+0.05::age(eleven_to_thirty_days) :- disease(paivs), sick(no).
+0.05::age(eleven_to_thirty_days) :- disease(tapvd), sick(yes).
+0.1::age(eleven_to_thirty_days) :- disease(tapvd), sick(no).
+0.02::age(eleven_to_thirty_days) :- disease(lung), sick(yes).
+0.05::age(eleven_to_thirty_days) :- disease(lung), sick(no).
+0.1::lowerbodyotwo(lt_five) :- hypdistrib(equal), hypoxiainotwo(mild).
+0.3::lowerbodyotwo(lt_five) :- hypdistrib(equal), hypoxiainotwo(moderate).
+0.5::lowerbodyotwo(lt_five) :- hypdistrib(equal), hypoxiainotwo(severe).
+0.4::lowerbodyotwo(lt_five) :- hypdistrib(unequal), hypoxiainotwo(mild).
+0.5::lowerbodyotwo(lt_five) :- hypdistrib(unequal), hypoxiainotwo(moderate).
+0.15::ductflow(lt_to_rt) :- disease(pfc).
+0.6::lowerbodyotwo(lt_five) :- hypdistrib(unequal), hypoxiainotwo(severe).
+0.3::lowerbodyotwo(five_to_twelve) :- hypdistrib(equal), hypoxiainotwo(mild).
+0.6::lowerbodyotwo(five_to_twelve) :- hypdistrib(equal), hypoxiainotwo(moderate).
+0.4::lowerbodyotwo(five_to_twelve) :- hypdistrib(equal), hypoxiainotwo(severe).
+0.5::lowerbodyotwo(five_to_twelve) :- hypdistrib(unequal), hypoxiainotwo(mild).
+0.45::lowerbodyotwo(five_to_twelve) :- hypdistrib(unequal), hypoxiainotwo(moderate).
+0.35::lowerbodyotwo(five_to_twelve) :- hypdistrib(unequal), hypoxiainotwo(severe).
+0.6::lowerbodyotwo(twelve_plus) :- hypdistrib(equal), hypoxiainotwo(mild).
+0.1::lowerbodyotwo(twelve_plus) :- hypdistrib(equal), hypoxiainotwo(moderate).
+0.1::lowerbodyotwo(twelve_plus) :- hypdistrib(equal), hypoxiainotwo(severe).
+0.1::ductflow(lt_to_rt) :- disease(tga).
+0.1::lowerbodyotwo(twelve_plus) :- hypdistrib(unequal), hypoxiainotwo(mild).
+0.05::lowerbodyotwo(twelve_plus) :- hypdistrib(unequal), hypoxiainotwo(moderate).
+0.05::lowerbodyotwo(twelve_plus) :- hypdistrib(unequal), hypoxiainotwo(severe).
+0.1::ruqotwo(lt_five) :- hypoxiainotwo(mild).
+0.3::ruqotwo(lt_five) :- hypoxiainotwo(moderate).
+0.5::ruqotwo(lt_five) :- hypoxiainotwo(severe).
+0.3::ruqotwo(five_to_twelve) :- hypoxiainotwo(mild).
+0.6::ruqotwo(five_to_twelve) :- hypoxiainotwo(moderate).
+0.4::ruqotwo(five_to_twelve) :- hypoxiainotwo(severe).
+0.6::ruqotwo(twelve_plus) :- hypoxiainotwo(mild).
+0.8::ductflow(lt_to_rt) :- disease(fallot).
+0.1::ruqotwo(twelve_plus) :- hypoxiainotwo(moderate).
+0.1::ruqotwo(twelve_plus) :- hypoxiainotwo(severe).
+0.9::cotworeport(lt_seven_point_five) :- cotwo(normal).
+0.9::cotworeport(lt_seven_point_five) :- cotwo(low).
+0.1::cotworeport(lt_seven_point_five) :- cotwo(high).
+0.1::cotworeport(ge_seven_point_five) :- cotwo(normal).
+0.1::cotworeport(ge_seven_point_five) :- cotwo(low).
+0.9::cotworeport(ge_seven_point_five) :- cotwo(high).
+0.8::xrayreport(normal) :- chestxray(normal).
+0.1::xrayreport(normal) :- chestxray(oligaemic).
+0.2::disease(pfc) :- birthasphyxia(yes).
+1.0::ductflow(lt_to_rt) :- disease(paivs).
+0.1::xrayreport(normal) :- chestxray(plethoric).
+0.08::xrayreport(normal) :- chestxray(grd_glass).
+0.08::xrayreport(normal) :- chestxray(asy_patch).
+0.06::xrayreport(oligaemic) :- chestxray(normal).
+0.8::xrayreport(oligaemic) :- chestxray(oligaemic).
+0.02::xrayreport(oligaemic) :- chestxray(plethoric).
+0.02::xrayreport(oligaemic) :- chestxray(grd_glass).
+0.02::xrayreport(oligaemic) :- chestxray(asy_patch).
+0.06::xrayreport(plethoric) :- chestxray(normal).
+0.02::xrayreport(plethoric) :- chestxray(oligaemic).
+0.33::ductflow(lt_to_rt) :- disease(tapvd).
+0.8::xrayreport(plethoric) :- chestxray(plethoric).
+0.1::xrayreport(plethoric) :- chestxray(grd_glass).
+0.1::xrayreport(plethoric) :- chestxray(asy_patch).
+0.02::xrayreport(grd_glass) :- chestxray(normal).
+0.02::xrayreport(grd_glass) :- chestxray(oligaemic).
+0.02::xrayreport(grd_glass) :- chestxray(plethoric).
+0.6::xrayreport(grd_glass) :- chestxray(grd_glass).
+0.1::xrayreport(grd_glass) :- chestxray(asy_patch).
+0.06::xrayreport(asy_patchy) :- chestxray(normal).
+0.06::xrayreport(asy_patchy) :- chestxray(oligaemic).
+0.2::ductflow(lt_to_rt) :- disease(lung).
+0.06::xrayreport(asy_patchy) :- chestxray(plethoric).
+0.2::xrayreport(asy_patchy) :- chestxray(grd_glass).
+0.7::xrayreport(asy_patchy) :- chestxray(asy_patch).
+0.8::gruntingreport(yes) :- grunting(yes).
+0.1::gruntingreport(yes) :- grunting(no).
+0.2::gruntingreport(no) :- grunting(yes).
+0.9::gruntingreport(no) :- grunting(no).
+0.05::ductflow(none) :- disease(pfc).
+0.8::ductflow(none) :- disease(tga).
+0.2::ductflow(none) :- disease(fallot).
+0.0::ductflow(none) :- disease(paivs).
+0.33::ductflow(none) :- disease(tapvd).
+0.4::ductflow(none) :- disease(lung).
+0.8::ductflow(rt_to_lt) :- disease(pfc).
+0.03061224::disease(pfc) :- birthasphyxia(no).
+0.1::ductflow(rt_to_lt) :- disease(tga).
+0.0::ductflow(rt_to_lt) :- disease(fallot).
+0.0::ductflow(rt_to_lt) :- disease(paivs).
+0.34::ductflow(rt_to_lt) :- disease(tapvd).
+0.4::ductflow(rt_to_lt) :- disease(lung).
+0.4::cardiacmixing(none) :- disease(pfc).
+0.02::cardiacmixing(none) :- disease(tga).
+0.02::cardiacmixing(none) :- disease(fallot).
+0.01::cardiacmixing(none) :- disease(paivs).
+0.01::cardiacmixing(none) :- disease(tapvd).
+0.3::disease(tga) :- birthasphyxia(yes).
+0.4::cardiacmixing(none) :- disease(lung).
+0.43::cardiacmixing(mild) :- disease(pfc).
+0.09::cardiacmixing(mild) :- disease(tga).
+0.16::cardiacmixing(mild) :- disease(fallot).
+0.02::cardiacmixing(mild) :- disease(paivs).
+0.03::cardiacmixing(mild) :- disease(tapvd).
+0.53::cardiacmixing(mild) :- disease(lung).
+0.15::cardiacmixing(complete) :- disease(pfc).
+0.09::cardiacmixing(complete) :- disease(tga).
+0.8::cardiacmixing(complete) :- disease(fallot).
+0.33673469::disease(tga) :- birthasphyxia(no).
+0.95::cardiacmixing(complete) :- disease(paivs).
+0.95::cardiacmixing(complete) :- disease(tapvd).
+0.05::cardiacmixing(complete) :- disease(lung).
+0.02::cardiacmixing(transp_point) :- disease(pfc).
+0.8::cardiacmixing(transp_point) :- disease(tga).
+0.02::cardiacmixing(transp_point) :- disease(fallot).
+0.02::cardiacmixing(transp_point) :- disease(paivs).
+0.01::cardiacmixing(transp_point) :- disease(tapvd).
+0.02::cardiacmixing(transp_point) :- disease(lung).
+0.6::lungparench(normal) :- disease(pfc).
+0.25::disease(fallot) :- birthasphyxia(yes).
+0.8::lungparench(normal) :- disease(tga).
+0.8::lungparench(normal) :- disease(fallot).
+0.8::lungparench(normal) :- disease(paivs).
+0.1::lungparench(normal) :- disease(tapvd).
+0.03::lungparench(normal) :- disease(lung).
+0.1::lungparench(congested) :- disease(pfc).
+0.05::lungparench(congested) :- disease(tga).
+0.05::lungparench(congested) :- disease(fallot).
+0.05::lungparench(congested) :- disease(paivs).
+0.6::lungparench(congested) :- disease(tapvd).
+0.29591837::disease(fallot) :- birthasphyxia(no).
+0.25::lungparench(congested) :- disease(lung).
+0.3::lungparench(abnormal) :- disease(pfc).
+0.15::lungparench(abnormal) :- disease(tga).
+0.15::lungparench(abnormal) :- disease(fallot).
+0.15::lungparench(abnormal) :- disease(paivs).
+0.3::lungparench(abnormal) :- disease(tapvd).
+0.72::lungparench(abnormal) :- disease(lung).
+0.3::lungflow(normal) :- disease(pfc).
+0.2::lungflow(normal) :- disease(tga).
+0.15::lungflow(normal) :- disease(fallot).
+0.15::disease(paivs) :- birthasphyxia(yes).
+0.1::lungflow(normal) :- disease(paivs).
+0.3::lungflow(normal) :- disease(tapvd).
+0.7::lungflow(normal) :- disease(lung).
+0.65::lungflow(low) :- disease(pfc).
+0.05::lungflow(low) :- disease(tga).
+0.8::lungflow(low) :- disease(fallot).
+0.85::lungflow(low) :- disease(paivs).
+0.1::lungflow(low) :- disease(tapvd).
+0.1::lungflow(low) :- disease(lung).
+0.05::lungflow(high) :- disease(pfc).

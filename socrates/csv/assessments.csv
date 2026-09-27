@@ -1,0 +1,3 @@
+assessmentID,owner,content,agreement,target
+Assessment_AllHumansAreMortal,RubenPeeters,The formalization correctly captures the universal implication expressed in the source claim. The rule is syntactically valid ProbLog and can be executed without further modification.,approved,ProbLog_AllHumansAreMortal
+Assessment_SocratesIsAHuman,RubenPeeters,The formalization correctly represents the source claim by asserting that Socrates is an instance of the concept Human. The fact is syntactically valid ProbLog and can be used directly in logical inference.,approved,ProbLog_SocratesIsAHuman

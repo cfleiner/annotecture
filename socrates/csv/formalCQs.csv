@@ -1,0 +1,2 @@
+formalCqID,owner,content,explanation,format,target,selectorPhrase
+CQ_AllMenAreMortal_ProbLog,RubenPeeters,query(mortal(socrates)).,The query verifies whether the knowledge base can derive that mortal(socrates) is 1.0,ProbLog,CQ_AllHumansAreMortal,Can the system infer that Socrates is mortal?

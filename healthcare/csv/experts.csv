@@ -1,0 +1,7 @@
+expertID,firstName,lastName,depiction,organization,knows1,knows2,knows3
+A,Amelia,Anderson,,North Hospital,B,C,D
+B,Benjamin,Brooks,,North Hospital,A,B,
+C,Charlotte,Campbell,,North Hospital,A,,
+D,Daniel,Davis,,West Hospital,A,E,F
+E,Eleanor,Edwards,,West Hospital,D,F,
+F,Frederick,Foster,,West Hospital,D,,

@@ -1,0 +1,2 @@
+cqID,owner,content,target
+CQ_AllHumansAreMortal,ChristianFleiner,Can the system infer that Socrates is mortal?,Claim_AllHumansAreMortal AND Claim_SocratesIsAHuman

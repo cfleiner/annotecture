@@ -1,0 +1,69 @@
+vocabulary V {
+    type Param := {Kp, Ki, Kd}
+    type Level := {Low, Moderate, High}
+    type Direction := {Keep, Up, Down}
+    type Intensity := {Slightly, Moderately}
+    type Effect := {Overshoot, Oscillations, Settling_Time, SSE}
+
+    prev_tuning: Param -> Level
+    next_tuning: Param -> Level
+    tune: Param * Direction * Intensity -> Bool
+
+    prev_effect: Effect -> Level
+    next_effect: Effect -> Level
+    positive_effect: Param * Effect -> Bool
+    negative_effect: Param * Effect -> Bool
+
+    change_level: Level * Direction * Intensity -> Level
+
+}
+
+theory T:V {
+
+    {
+     !p in Param, d in Direction, i2 in Intensity, l in Level: next_tuning(p) =
+        change_level(l, d, i2) <- l = prev_tuning(p) & tune(p, d, i2).
+    }
+
+    // Increasing param worsens the effects it positive influences, and alleviates the effects it negatively influences.
+    !p in Param, i in Intensity: tune(p, Up, i) => 
+        (!e in Effect: positive_effect(p, e) => next_effect(e) = change_level(prev_effect(e), Up, i))
+        & (!e in Effect: negative_effect(p, e) => next_effect(e) = change_level(prev_effect(e), Down, i)).
+
+    // Decreasing param alleviates the effects it positive influences, and worsens the effects it negatively influences.
+    !p in Param, i in Intensity: tune(p, Down, i) => 
+        (!e in Effect: positive_effect(p, e) => next_effect(e) = change_level(prev_effect(e), Down, i))
+        & (!e in Effect: negative_effect(p, e) => next_effect(e) = change_level(prev_effect(e), Up, i)).
+
+}
+
+structure S:V {
+    change_level := {
+        (Low, Up, Slightly) -> Moderate,
+        (Low, Up, Moderately) -> High,
+        (Moderate, Up, Slightly) -> High,
+        (Moderate, Up, Moderately) -> High,
+        (High, Up, Slightly) -> High,
+        (High, Up, Moderately) -> High,
+        (Low, Down, Slightly) -> Low,
+        (Low, Down, Moderately) -> Low,
+        (Moderate, Down, Slightly) -> Low,
+        (Moderate, Down, Moderately) -> Low,
+        (High, Down, Slightly) -> Moderate,
+        (High, Down, Moderately) -> Low,
+        (Low, Keep, Slightly) -> Low,
+        (Low, Keep, Moderately) -> Low,
+        (Moderate, Keep, Slightly) -> Moderate,
+        (Moderate, Keep, Moderately) -> Moderate,
+        (High, Keep, Slightly) -> High,
+        (High, Keep, Moderately) -> High
+    }.
+
+// EFFECT RULES ARE INSERTED BELOW
+
+
+}
+
+procedure main() {
+    pretty_print(model_expand(T,S))
+}

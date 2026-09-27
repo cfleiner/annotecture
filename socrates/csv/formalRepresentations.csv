@@ -1,0 +1,6 @@
+formalID,owner,content,explanation,format,target,selectorPhrase
+FOL_AllHumansAreMortal,ChristianFleiner,∀x (Human(x) → Mortal(x)).,The phrase All humans is interpreted as universal quantification.,First-order logic,Claim_AllHumansAreMortal,All humans are mortal.
+FOL_SocratesIsAHuman,ChristianFleiner,Human(socrates).,"The statement identifies Socrates as an instance of the concept Human, representing the factual claim that Socrates is a human.",First-order logic,Claim_SocratesIsAHuman,Socrates is a human.
+ProbLog_AllHumansAreMortal,ChristianFleiner,mortal(X) :- human(X).,The universal statement is represented as a deterministic Horn clause.,ProbLog,Claim_AllHumansAreMortal,All humans are mortal.
+ProbLog_SocratesIsAHuman,ChristianFleiner,human(socrates).,"The statement identifies Socrates as an instance of the concept Human, representing the factual claim that Socrates is a human.",ProbLog,Claim_SocratesIsAHuman,Socrates is a human.
+CQ_AllMenAreMortal_ProbLog,RubenPeeters,,,,,
